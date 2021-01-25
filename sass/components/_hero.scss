@@ -135,6 +135,22 @@
         &__cta{
             display: flex;
             flex-direction: row;  
+            justify-content: space-between;
+            margin-bottom: clamp(15px 3vh, 30px);
+
+            & button:first-child,
+            & a:first-child{
+                width: 64%;
+            }
+
+            & button:last-child,
+            & a:last-child{
+                width: 95%;
+            }
+        
+            & a:last-child{
+                text-align: right;
+            }
         }
     }
 }

@@ -42,14 +42,13 @@
 
     // Sizes:
     &--cta{
-        padding: 15px 50px;
+        padding: 12px 0;
         margin: 0;
-        font-size: clamp(12px, 2vw, 20px);
-        margin-right: 20px;
+        font-size: clamp(13px, 2vw, 20px);
 
-        @media (max-width: 576px){
+        /* @media (max-width: 576px){
             padding: 10px 15px;
-        }
+        } */
     }
 
     &--lg{
