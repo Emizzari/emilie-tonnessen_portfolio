@@ -1,0 +1,35 @@
+// Font Families:
+h1, h2, h3, h4, h5, h6, button{
+    font-family: fieldwork-hum, sans-serif;
+    text-transform: uppercase;
+}
+
+a, p, input, textarea, label, div, section{
+    font-family: montserrat, sans-serif;
+}
+
+// Colors
+.color--primary{
+    color: colors(primary);
+}
+
+.color--secondary{
+    color: colors(secondary);
+}
+
+.color--tertiary{
+    color: colors(tertiary);
+}
+
+// Alignment: 
+.text-align--center{
+    text-align: center;
+}
+
+// Font Sizes: 
+
+
+.paragraph{
+    margin-bottom: 30px;
+    font-size: clamp(14px, 2vw, 16px);
+}

@@ -1,0 +1,92 @@
+.profile-img{
+    height: clamp(400px, 10vw, 700px);
+    width: 100%;
+    background-image: url("../graphics/about.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 70% 0;;
+}
+
+.about{
+
+    &__container{
+        padding-top: clamp(50px, 5vh, 150px);
+
+        @media (min-width: 1400px){
+            margin-top: 50px;
+        }
+    }
+
+    &__headline{
+        font-weight: 700;
+        font-size: clamp(30px, 5vw, 50px);
+    }
+
+    &__interests{
+        display: flex;
+        flex-direction: row;
+
+        &__tag{
+            background: colors(secondary);
+            color: colors(tertiary);
+            padding: 5px 10px;
+            margin-right: 10px;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: clamp(10px, 2vw, 14px);
+        }
+    }
+
+    &__desc{
+        padding: 25px;
+        //margin-top: 50px;
+
+        @media (max-width: 576px) {
+            padding: 0;
+        }
+
+        & p{
+            padding: 10px 0;
+        }
+    }
+
+    &__profile{
+        padding: 25px;
+
+        @media (max-width: 576px) {
+            padding: 0;
+        }
+    }
+
+    &__buttons{
+        margin: 30px 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+
+        @media (min-width: 992px) {
+            margin: 15px 0;
+        }
+    }
+
+    &__skills{
+        background: linear-gradient(90deg, #188CD9, #164582);
+
+        &__container{
+            display:flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 50px 0px;
+
+            & i{
+                font-size: clamp(23px, 3vw, 50px);
+                color: rgba(255, 255, 255, 0.7);
+
+            }
+
+            @media (max-width: 991px) {
+                padding: 20px 12px;
+            }
+        }
+    }
+}

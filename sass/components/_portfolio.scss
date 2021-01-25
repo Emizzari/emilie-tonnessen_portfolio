@@ -1,0 +1,64 @@
+.portfolio{
+    margin-bottom: clamp(50px, 5vw, 150px);
+
+    &__container{
+        justify-content: space-between;
+    }
+
+    &__card{
+        padding: 0 20px;
+        position: relative;
+
+        @media (max-width: 991px) {
+            margin: 20px 0;
+        }
+
+        &__container{
+            box-shadow: 
+            0 15px 30px 0 rgba(0,0,0,0.05),
+            0 5px 15px 0 rgba(0,0,0,.05);
+            transition: ease box-shadow 0.3s;
+        }
+
+        &__thumbnail{
+            width: 100%;
+        }
+
+        &__content{
+            padding: 15px;
+        }
+
+        &__title{
+            font-weight: 600;
+            font-size: clamp(18px, 5vw, 20px);
+            margin-bottom: 5px;
+        }
+
+        &__description{
+            font-size: clamp(13px, 2vw, 16px);
+            margin-bottom: 20px;
+        }
+
+        &__buttons{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            & a, & button{
+                width: 100%;
+            }
+
+            & a:first-child{
+                margin-right: 20px;
+
+                @media (max-width: 991px){
+                    margin-right: 12px;
+                }
+
+                @media (min-width: 992px){
+                    margin-right: 12px;
+                }
+            }
+        }
+    }
+}

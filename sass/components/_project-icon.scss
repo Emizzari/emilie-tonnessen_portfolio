@@ -1,0 +1,22 @@
+.project__icon{
+    display: flex;
+    flex-direction: row;
+
+    &__box{
+        width: 50%;
+        padding-top: 50%;
+        position: relative;
+
+        & img{
+            width: 50%;
+        }
+    }
+
+    &--dark-bg{
+        background: colors(tertiary);
+    }
+
+    &--dark-light{
+        background: #FFF;
+    }
+}

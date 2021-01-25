@@ -1,0 +1,11 @@
+export const form = document.querySelector(".contact-form");
+export const feedback = document.querySelector(".feedback");
+export const name = document.querySelector("#name");
+export const nameError = document.querySelector(".contact-form__error--name");
+export const email = document.querySelector("#email");
+export const emailError = document.querySelector(".contact-form__error--email");
+export const topic = document.querySelector("#topic");
+export const topicError = document.querySelector(".contact-form__error--topic");
+export const message = document.querySelector("#message");
+export const messageError = document.querySelector(".contact-form__error--message");
+export const submit = document.querySelector(".contact-form__submit");
