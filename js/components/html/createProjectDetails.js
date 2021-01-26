@@ -148,7 +148,7 @@ export function creatProjectDetails(detail){
     h6Text.innerHTML = "h6 - " + fontStyles.h6;
 
     p.style.fontFamily = fontStyles.p;
-    pText.innerHTML = "paragraphs - " + fontStyles.p;
+    pText.innerHTML = "Avsnitt - " + fontStyles.p;
 
     const typographyImport = document.querySelector(".project__typography__import");
     typographyImport.href = detail.typography.import;

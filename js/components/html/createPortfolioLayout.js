@@ -38,13 +38,13 @@ export default function createPortfolioLayout(projects){
                         <div class="portfolio__card__buttons">
                             <a href="./project.html?id=${project.id}">
                                 <button class="btn btn--secondary btn--sm">
-                                    Details
+                                    Detaljer
                                 </button>
                             </a>
 
                             <a target="_blank" rel="noopener noreferrer" href="${project.linkLiveWebsite}">
                                 <button class="btn btn--tertiary btn--sm">
-                                    Live Website
+                                    Nettside
                                     <i class="fal fa-external-link"></i>
                                 </button>
                             </a>
