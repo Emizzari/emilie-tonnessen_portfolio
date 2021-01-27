@@ -63,36 +63,44 @@
 <body>
     <!-- Wrapper: -->
     <div class="wrapper">
+
         <!-- Navigation: -->
         <nav class="nav">
-            <div class="container">
-                <div class="row">
 
-                    <!-- Brand -->
-                    <a href="./index.html" class="nav__brand col">
-                        <div class="nav__brand__first-name">Emilie</div>
-                        <div class="nav__brand__last-name">Tønnessen</div>
-                    </a>
+            <!-- Brand -->
+            <a href="./index.html" class="nav__brand">
+                <div class="nav__brand__first-name col-12">Emilie</div>
+                <div class="nav__brand__last-name col-12">Tønnessen</div>
+            </a>
 
-                    <!-- Menu -->
-                    <ul class="nav__list nav__list--dark col-12">
-                        <li class="nav__item">
-                            <a href="./portfolio.html" class="nav__link nav__link--dark">Portfolio</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="./about.html" class="nav__link nav__link--dark">About</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="./contact.html" class="nav__link nav__link--active nav__link--dark">Contact</a>
-                        </li>
-                    </ul>
-                    
-                    <!-- Decoration: -->
-                    <div class="nav__decor nav__decor--dark col-12">
-                        <div></div>
-                    </div>
-                
-                </div>
+            <!-- Menu -->
+            <div class="nav__menu">
+                <ul class="nav__menu__list">
+                    <li>
+                        <a href="./portfolio.html" class="nav__menu__list__link">Portfolio</a>
+                    </li>
+                    <li >
+                        <a href="./about.html" class="nav__menu__list__link">Om Meg</a>
+                    </li>
+                    <li>
+                        <a href="./contact.html" class="nav__menu__list__link nav__menu__list__link--active">Kontakt</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div></div>
+
+            <!-- Decoration: -->
+            <div class="nav__decor nav__decor--dark">
+                <div></div>
+            </div>    
+
+            <!-- Hamburger Icon: -->
+            <div class="nav__menu__hamburger-icon ">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </nav>
 
@@ -106,37 +114,36 @@
         <main class="main">
             <div class="container">
                 <div class="row">
-                    <div class="col-6">
-                        <h2 class="header__subline">Free Consultation</h2>
-                        <p class="paragraph">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt nisi modi tenetur commodi odit, provident harum ad? Rem nulla fuga assumenda mollitia odio laborum quos dicta id. Cum, repellendus eaque
-                        </p>
 
-                        <h2 class="header__subline">Non-Binding</h2>
-                        <p class="paragraph"> 
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt nisi modi tenetur commodi odit, provident harum
-                            ad? Rem nulla fuga assumenda mollitia odio laborum quos dicta id. Cum, repellendus eaque
+
+
+                    <div class="col-sm-12 col-lg-6">
+                        <h2 class="header__subline">Gratis og uforpliktende konsultasjon</h2>
+                        <p class="paragraph">
+                            Kontakt meg gjerne for en gratis og uforpliktende konsultasjon. Vi ser sammen på hva du kunne tenke deg, hva dine behov er, og hvordan jeg videre kan hjelpe deg.
                         </p>
                     </div>
 
                     <!-- Contact Form: -->
-                    <form method="post" action="./contact.php"  id="contact-form" class="col-6 row contact-form">
+                    <form  action="https://www.tonnessen.com/contact.php" method="post"  id="contact-form" class="col-sm-12 col-lg-6 row contact-form">
 
                         <!-- Feedback: -->
                         <div class="feedback">
                             <?php
                                 if($message_sent){
-                                    echo("<div class='feedback--success'>Thank you for contacting me, I will reach back to you as soon as possible!</div>");
+                                    echo("<div class='feedback--success'>Takk for meldingen, jeg vil ta kontakte deg så raskt jeg kan!</div>");
                                 } else{
-                                    echo("<div class='feedback--error'>Something went wrong. and the mail was not sent. Please try again!</div>");
+                                    echo("<div class='feedback--error'>Noe gikk galt, og meldingen ble desverre ikke sendt. Prøv på nytt.</div>");
                                 }
                             ?>
                         </div>
 
                         <!-- Name: -->
                         <section class="col-12 contact-form__section">
-                            <label for="name" class="contact-form__label">Name: </label>
-                            <input name="name" id="name" class="contact-form__input" type="text">
+                            <!-- <label for="name" class="contact-form__label">Name: </label> -->
+                            <input name="name" id="name" class="contact-form__input" type="text" placeholder="Kari Nordman">
+
+
                             <div class="contact-form__error contact-form__error--name">
                                 <i class="fal fa-exclamation-triangle"></i> Please enter your name
                             </div>
@@ -144,8 +151,8 @@
 
                         <!-- Email: -->
                         <section class="col-12 contact-form__section">
-                            <label for="email" class="contact-form__label">Email: </label>
-                            <input name="email" id="email" class="contact-form__input" type="text">
+                            <!-- <label for="email" class="contact-form__label">Email: </label> -->
+                            <input name="email" id="email" class="contact-form__input" type="text" placeholder="kari@norman.no">
                             <div class="contact-form__error contact-form__error--email">
                                 <i class="fal fa-exclamation-triangle"></i> Please enter a valid email address
                             </div>
@@ -153,8 +160,8 @@
 
                         <!-- Topic: -->
                         <section class="col-12 contact-form__section">
-                            <label for="topic" class="contact-form__label">Topic: </label>
-                            <input name="topic" id="topic" class="contact-form__input" type="text">
+                            <!-- <label for="topic" class="contact-form__label">Topic: </label> -->
+                            <input name="topic" id="topic" class="contact-form__input" type="text" placeholder="Emne..">
                             <div class="contact-form__error contact-form__error--topic">
                                 <i class="fal fa-exclamation-triangle"></i> Please enter a topic
                             </div>
@@ -162,8 +169,8 @@
 
                         <!-- Message -->
                         <section class="col-12 contact-form__section">
-                            <label for="message" class="contact-form__label">Topic: </label>
-                            <textarea name="message" id="message" class="contact-form__textarea" type="text"></textarea>
+                            <!-- <label for="message" class="contact-form__label">Topic: </label> -->
+                            <textarea name="message" id="message" class="contact-form__textarea" type="text" placeholder="Skriv din melding her.."></textarea>
 
                             <div class="contact-form__error contact-form__error--message">
                                 <i class="fal fa-exclamation-triangle"></i> Please write a longer message
@@ -175,6 +182,8 @@
                             <input name="submit" type="submit" class="submit contact-form__submit btn btn--primary" value="SEND">
                         </div>
                     </form>
+
+
                 </div>
             </div>
         </main>
@@ -190,6 +199,7 @@
     </footer>
 
     <!-- JavaScript: -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="./js/contact.js" type="module"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
