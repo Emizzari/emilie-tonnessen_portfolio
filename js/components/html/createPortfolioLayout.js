@@ -2,8 +2,6 @@ import displayMessage from "../messages/displayMessage.js";
 
 // Display a list of projects from the API
 export default function createPortfolioLayout(projects){
-    console.log(projects);
-
     const portfolioContainer = document.querySelector(".portfolio__container");
 
     // Remove the loading skeleton
