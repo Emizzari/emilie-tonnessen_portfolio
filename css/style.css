@@ -1555,8 +1555,10 @@ a {
   }
 }
 
-.breadcrumb {
-  margin-top: 20px;
+@media (min-width: 992px) {
+  .breadcrumb {
+    margin-top: clamp(40px, 8vw, 100px);
+  }
 }
 
 .breadcrumb a {
