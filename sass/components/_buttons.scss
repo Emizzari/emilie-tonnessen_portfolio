@@ -1,54 +1,94 @@
 .btn{
-    border-radius: 0;
-    border: 0;
-    text-transform: uppercase;
-    font-weight: 600;
-    transition: .2s ease-in-out;
+    // Standard Properties
+    &:link,
+    &:visited {
+        text-transform: uppercase;
+        font-size: $default-fontsize;
+        font-weight: 600;
+        display: inline-block;
+        border-radius: 0;
+        border: 0;
+        outline: 0;        
+        position: relative;
+        transition: all .2s;
 
-    & i{
-        margin: 0 5px;
+        & i{
+            margin-left: 5px;
+        }
     }
 
-    // Colors:
+    &:hover {
+        transform: translateY(-0.5rem) scale(1.02);
+        box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+    }
+
+    &:active{
+        transform: translateY(0.5rem);
+        box-shadow: 0 .5rem 1rem rgba($color-black, 0.2);
+    }
+
+    // Color Modifier:
     &--primary{
         background: colors(primary);
-        color: #FFF;
+        color: $color-white;
 
         &:hover{
             background: colors(primary, light);
-            color: #FFF;
+            color: $color-white;
         }
     }
 
     &--secondary{
         background: colors(secondary);
-        color: #000;
+        color: $color-black;
 
         &:hover{
             background: colors(secondary, dark);
-            color: #000;
+            color: $color-black;
         }
     }
 
     &--tertiary{
         background: colors(tertiary);
-        color: #FFF;
+        color: $color-white;
 
         &:hover{
-            background: colors(tertiary, light);
-            color: #FFF;
+            background: colors(tertiary, dark);
+            color: $color-white;
         }
     }
 
-    // Sizes:
-    &--cta{
+    &--github{
+        background: $color-github;
+        color: $color-white;
+
+        &:hover{
+            background: darken($color-github, 20);
+            color: $color-white;
+        }
+    }
+
+    &--linkedin{
+        background: $color-linkedin;
+        color: $color-white;
+
+        &:hover{
+            background: darken($color-linkedin, 10);
+            color: $color-white;
+        }
+    }
+
+    // Size Modifier:
+    &--cta {
         padding: 12px 0;
         margin: 0;
-        font-size: clamp(13px, 2vw, 20px);
+        font-size: clamp(13px, 1.9vw, 20px);
+        
+        width: calc((100% - 2rem) / 2);
 
-        /* @media (max-width: 576px){
-            padding: 10px 15px;
-        } */
+        &:not(:last-child) {
+            margin-right: 2rem;
+        }
     }
 
     &--lg{
@@ -93,28 +133,4 @@
             font-size: 11px;
         }
     }
-
-    // Extra buttons
-    &--github{
-        background: rgba(110, 66, 193, 1);
-        color: #FFF;
-
-        &:hover{
-            background: rgba(110, 66, 193, 0.7);
-            color: #FFF;
-        }
-    }
-
-    &--linkedin{
-        background: rgba(14, 119, 168, 1);
-        color: #FFF;
-        margin-right: 0px !important;
-
-        &:hover{
-            background: rgba(14, 119, 168, 0.7);
-            color: #FFF;
-        }
-    }
-
-    
 }
