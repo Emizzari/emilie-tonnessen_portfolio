@@ -1,24 +1,24 @@
-// Basics
-@import "./basics/colors";
-@import "./basics/typography";
-@import "./basics/layout";
+// Abstracts
+@import "./abstracts/variables";
+@import "./abstracts/mixin";
+@import "./abstracts/maps";
+@import "./abstracts/functions";
 
-
-// Constants
-@import "./components/hamburger-icon";
-@import "./constants/nav";
-@import "./constants/footer";
-@import "./constants/header";
-
+// Base
+@import "./base/typography";
+@import "./base/layout";
+@import "./base/animations";
+@import "./base/base";
+@import "./base/utilities";
 
 // Components
+@import "./components/hamburger-icon";
 @import "./components/hero";
 @import "./components/buttons";
 @import "./components/links";
 @import "./components/benefits";
 @import "./components/process";
 @import "./components/header";
-@import "./components/about";
 @import "./components/contact-form";
 @import "./components/portfolio";
 @import "./components/skeleton";
@@ -29,41 +29,13 @@
 @import "./components/project-icon";
 @import "./components/feedback";
 
+// Layout
+@import "./layout/nav";
+@import "./layout/footer";
+@import "./layout/header";
+@import "./layout/main";
+@import "./layout/grid";
 
-// X-Small devices (landscape phones, 576px and down)
-/* 
-@media (max-width: 576px) {
-
-}
-
-
-
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) { 
-
-}
-
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {
-
-}
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) {
-
-}
-
-// X-Large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {
-
-}
-
-// XX-Large devices (larger desktops, 1400px and up)
-@media (min-width: 1400px) {
-
-}
-
-// XXX-Large devices (larger desktops, 1921px and up)
-@media (min-width: 1921px) {
-    
-} */
+// Pages
+@import "./pages/about";
+@import "./pages/contact";
