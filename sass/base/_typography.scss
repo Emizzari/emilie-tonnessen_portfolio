@@ -1,0 +1,39 @@
+body{
+    font-family: $font-body;
+    font-size: $default-fontsize;
+    line-height: 1.7;
+    color: $color-black;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: fieldwork-hum, sans-serif;
+    text-transform: uppercase;
+}
+
+
+
+// Colors
+.color--primary{
+    color: colors(primary);
+}
+
+.color--secondary{
+    color: colors(secondary);
+}
+
+.color--tertiary{
+    color: colors(tertiary);
+}
+
+// Alignment: 
+.text-align--center{
+    text-align: center;
+}
+
+// Font Sizes: 
+
+
+.paragraph{
+    margin-bottom: 30px;
+    font-size: clamp(14px, 2vw, 16px);
+}
