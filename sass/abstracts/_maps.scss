@@ -1,0 +1,37 @@
+// Colors
+$colors: (
+    primary: (
+        base: $color-primary,
+        light: lighten($color-primary, $color-lighten),
+        dark: darken($color-primary, $color-darken),
+    ),
+    secondary: (
+        base: $color-secondary,
+        light: lighten($color-secondary, $color-lighten),
+        dark: darken($color-secondary, $color-darken),
+    ),
+    tertiary: (
+        base: $color-tertiary,
+        light: lighten($color-tertiary, $color-lighten),
+        dark: darken($color-tertiary, $color-darken),
+    ),
+    grey: (
+        base: $color-grey,
+        light: lighten($color-grey, $color-lighten),
+        dark: darken($color-grey, $color-darken),
+    ),
+    error: (
+        base: $color-error,
+        light: lighten($color-error, $color-lighten),
+        dark: darken($color-error, $color-darken),
+    )
+);
+
+@function colors($base, $shade: base) {
+    $color: map-get(
+        map-get($colors, $base), 
+        $shade
+    );
+
+    @return $color;
+}
