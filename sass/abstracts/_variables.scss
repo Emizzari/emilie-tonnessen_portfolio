@@ -1,0 +1,38 @@
+// Colors
+$color-primary: #00629B;
+$color-primary-light: #188CD9;
+$color-primary-dark:  #164582;
+$color-secondary: #FFBF5F;
+$color-tertiary: #1A1A1A;
+$color-grey: #d4d4d4;
+$color-white: #FFFFFF;
+$color-black: #000000;
+$color-error: #C90000;
+
+$color-github:#6f42c1;
+$color-linkedin: #0e76a8;
+
+$color-lighten: 10;
+$color-darken: 10;
+
+// Grid
+$grid-width: 114rem;
+$gutter-vertical: 8rem;
+$gutter-horizontal: 6rem;
+
+// Font Sizes
+$default-fontsize: 1.6rem;
+
+// Fonts
+$font-body: montserrat, sans-serif;
+$font-heading: fieldwork-hum, sans-serif;
+
+// Media Query
+$width-mobile: 576px;
+$width-tablet-vertical: 768px;
+$width-tablet-horizontal: 992px;
+$width-laptop: 1200px;
+$width-laptop-large: 1400px;
+$width-desktop: 1920px;
+$width-desktop-large: 2560px;
+$width-widescreen: 3440px;
