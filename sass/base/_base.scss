@@ -1,0 +1,23 @@
+*, 
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%; 
+    @include html-body;
+}
+
+body {
+    box-sizing: border-box;    
+    display: flex;
+    flex-direction: column;
+    @include html-body;
+}
+
+.wrapper {
+    flex: 1 0 auto;
+}
