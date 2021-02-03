@@ -90,14 +90,12 @@
             width: 750px;
             left: 35%;
             top: 70%;
-            padding: 30px;
         }
 
         @media (min-width: $width-desktop-large) {
             width: 850px;
             left: 35%;
             top: 70%;
-            
         }
     }
 
@@ -117,11 +115,6 @@
             animation: moveInBottom .8s ease-out ;
             animation-fill-mode: backwards;
         }
-        
-
-
-
-        
 
         &__headline{
             text-transform: uppercase;
