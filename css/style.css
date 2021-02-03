@@ -12429,6 +12429,10 @@ body {
   font-size: clamp(10px, 2vw, 16px);
 }
 
+.project__color-palette__text {
+  margin: 0;
+}
+
 .project__buttons {
   display: -webkit-box;
   display: -ms-flexbox;
