@@ -11303,6 +11303,7 @@ fieldset:disabled .btn {
 }
 
 body {
+  font-display: auto;
   font-family: montserrat, sans-serif;
   font-size: 1.6rem;
   line-height: 1.7;
@@ -11314,24 +11315,12 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   text-transform: uppercase;
 }
 
-.color--primary {
-  color: #00629B;
-}
-
-.color--secondary {
-  color: #FFBF5F;
-}
-
-.color--tertiary {
-  color: #1A1A1A;
-}
-
-.text-align--center {
-  text-align: center;
-}
-
 .paragraph {
-  margin-bottom: 30px;
+  font-size: 1.6rem;
+}
+
+.paragraph:not(:last-child) {
+  margin-bottom: 3rem;
 }
 
 .font-style--elegant {
@@ -11343,73 +11332,9 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 
 .font-style--userfriendly {
   font-family: fieldwork-hum, sans-serif;
-  font-style: normal;
+  font-size: clamp(16px, 2vw, 25px);
   font-weight: 600;
   color: #FFBF5F;
-}
-
-/* STICKY FOOTER: ------------------------------- */
-/* ---------------------------------------------- */
-a {
-  text-decoration: none;
-}
-
-.body--primary {
-  background: #00629B;
-  color: #FFF;
-}
-
-.body--secondary {
-  background: #FFBF5F;
-  color: #000;
-}
-
-.body--tertiary {
-  background: #1A1A1A;
-  color: #FFF;
-  z-index: -999;
-}
-
-.container {
-  position: relative;
-}
-
-.section {
-  padding: 200px 0;
-  min-height: 110vh;
-}
-
-@media (max-width: 576px) {
-  .section {
-    padding: 100px 0;
-  }
-}
-
-.section--primary {
-  background: #00629B;
-}
-
-.section--secondary {
-  background: #FFBF5F;
-}
-
-.section--tertiary {
-  background: #1A1A1A;
-  color: white;
-}
-
-.section__headline {
-  font-size: clamp(40px, 10vw, 100px);
-  text-align: center;
-  font-weight: 800;
-}
-
-.section__headline--lg {
-  font-size: clamp(65px, 10vw, 140px);
-}
-
-.section__button {
-  text-align: center;
 }
 
 @-webkit-keyframes moveInBottom {
@@ -11452,8 +11377,6 @@ html {
 }
 
 body {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11461,6 +11384,8 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   height: 100%;
   width: 100%;
   position: relative;
@@ -11471,6 +11396,22 @@ body {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 auto;
           flex: 1 0 auto;
+}
+
+.u-color-primary {
+  color: #00629B;
+}
+
+.u-color-secondary {
+  color: #FFBF5F;
+}
+
+.u-color-tertiary {
+  color: #1A1A1A;
+}
+
+.u-text-align-center {
+  text-align: center;
 }
 
 .nav__menu__hamburger-icon {
@@ -11759,7 +11700,7 @@ body {
 .hero__content__text {
   font-size: clamp(14px, 2vw, 20px);
   margin-bottom: clamp(15px, 2vh, 30px);
-  line-height: 22px;
+  line-height: clamp(2rem, 2vh, 25px);
 }
 
 @media (min-width: 1921px) {
@@ -11945,36 +11886,6 @@ body {
 
 .link--tertiary:hover {
   color: #1A1A1A;
-}
-
-.benefits__content {
-  margin: 50px 0;
-}
-
-@media (max-width: 576px) {
-  .benefits__content {
-    margin: 30px 0;
-  }
-}
-
-.benefits__title {
-  position: relative;
-  font-weight: 800;
-  letter-spacing: 1px;
-  border-bottom: 1px solid #FFBF5F;
-  margin-bottom: 15px;
-}
-
-.benefits__icon {
-  font-size: 100px;
-  width: 140px;
-}
-
-.benefits__nr {
-  font-size: 150px;
-  font-weight: 900;
-  color: #FFBF5F;
-  width: 100px;
 }
 
 .process {
@@ -13028,6 +12939,7 @@ body {
   color: #1A1A1A;
   text-align: center;
   font-weight: 600;
+  text-decoration: none;
 }
 
 @media (max-width: 991px) {
@@ -13164,6 +13076,48 @@ body {
   }
 }
 
+.container {
+  position: relative;
+}
+
+.section {
+  padding: 200px 0;
+  min-height: 110vh;
+}
+
+@media (max-width: 576px) {
+  .section {
+    padding: 100px 0;
+  }
+}
+
+.section--primary {
+  background: #00629B;
+}
+
+.section--secondary {
+  background: #FFBF5F;
+}
+
+.section--tertiary {
+  background: #1A1A1A;
+  color: white;
+}
+
+.section__headline {
+  font-size: clamp(40px, 10vw, 100px);
+  text-align: center;
+  font-weight: 800;
+}
+
+.section__headline--lg {
+  font-size: clamp(65px, 10vw, 140px);
+}
+
+.section__button {
+  text-align: center;
+}
+
 .profile-img {
   height: clamp(400px, 10vw, 700px);
   width: 100%;
@@ -13290,5 +13244,10 @@ body {
 .section-contact {
   padding-right: 3rem;
   display: inline-block;
+}
+
+.body--home {
+  background: #00629B;
+  color: #FFFFFF;
 }
 /*# sourceMappingURL=style.css.map */

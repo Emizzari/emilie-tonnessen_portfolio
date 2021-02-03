@@ -1,9 +1,9 @@
 body{
+    font-display: auto;
     font-family: $font-body;
     font-size: $default-fontsize;
     line-height: 1.7;
     color: $color-black;
-    font-display: auto;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -11,35 +11,14 @@ h1, h2, h3, h4, h5, h6{
     text-transform: uppercase;
 }
 
-
-
-// Colors
-.color--primary{
-    color: colors(primary);
-}
-
-.color--secondary{
-    color: colors(secondary);
-}
-
-.color--tertiary{
-    color: colors(tertiary);
-}
-
-// Alignment: 
-.text-align--center{
-    text-align: center;
-}
-
-// Font Sizes: 
-
-
 .paragraph{
-    margin-bottom: 30px;
+    font-size: $default-fontsize;
+    
+    &:not(:last-child){
+        margin-bottom: 3rem;
+    }
 }
 
-
-// Style
 .font-style--elegant{
     font-family: $font-elegant;
     font-size: clamp(22px, 5vw, 40px);
@@ -49,7 +28,7 @@ h1, h2, h3, h4, h5, h6{
 
 .font-style--userfriendly{
     font-family: $font-heading;
-    font-style: normal;
+    font-size: clamp(16px, 2vw, 25px);
     font-weight: 600;
     color: colors(secondary);
 }

@@ -11,10 +11,10 @@ html {
     @include html-body;
 }
 
-body {
-    box-sizing: border-box;    
+body {  
     display: flex;
     flex-direction: column;
+    box-sizing: border-box;  
     @include html-body;
 }
 

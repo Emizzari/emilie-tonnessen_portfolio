@@ -148,7 +148,7 @@
         &__text{
             font-size: clamp(14px, 2vw, 20px);
             margin-bottom: clamp(15px, 2vh, 30px);
-            line-height: 22px;
+            line-height: clamp(2rem, 2vh, 25px);
 
             @media (min-width: 1921px) {
                 font-size: 25px;
