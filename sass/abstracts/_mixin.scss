@@ -4,3 +4,23 @@
     position: relative;
     overflow-x: hidden;
 }
+
+@mixin space-between {
+    display: flex;
+    flex-direction: row;  
+    justify-content: space-between;
+}
+
+@mixin background-image-properties {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+@mixin clearfix {
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}

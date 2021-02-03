@@ -79,16 +79,10 @@
     }
 
     // Size Modifier:
-    &--cta {
-        padding: 12px 0;
-        margin: 0;
-        font-size: clamp(13px, 1.9vw, 20px);
-        
-        width: calc((100% - 2rem) / 2);
-
-        &:not(:last-child) {
-            margin-right: 2rem;
-        }
+    &--cta:link,
+    &--cta:visited {
+        padding: 12px 3px;
+        font-size: clamp(11px, 1.5vw, 20px);
     }
 
     &--lg{
@@ -97,25 +91,10 @@
         font-size: 20px;
     }
 
-    &--md{
+    &--md:link,
+    &--md:visited{
         padding: 10px 35px;
-        margin: 0;
-        font-size: 20px;
-
-        @media (max-width: 991px){
-            padding: 8px 12px;
-            font-size: 14px;
-        }
-
-        @media (min-width: 992px) and (max-width:1399px){
-            padding: 10px 20px;
-            font-size: 15px;
-        }
-
-        @media (min-width: 1400px){
-            padding: 15px 40px;
-            font-size: 18px;
-        }
+        font-size: clamp(10px, 1.5vw, 16px);
     }
 
     &--sm{
