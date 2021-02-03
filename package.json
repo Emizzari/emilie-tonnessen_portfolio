@@ -17,5 +17,7 @@
     "url": "https://github.com/Emizzari/emilie-tonnessen_portfolio/issues"
   },
   "homepage": "https://github.com/Emizzari/emilie-tonnessen_portfolio#readme",
-  "dependencies": {}
+  "dependencies": {
+    "bootstrap": "^5.0.0-beta1"
+  }
 }
