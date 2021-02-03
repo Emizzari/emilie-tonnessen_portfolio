@@ -1,0 +1,21 @@
+{
+  "name": "emilie-tonnessen_portfolio",
+  "version": "1.0.0",
+  "description": "- **Start Date:** 25.01.2021",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Emizzari/emilie-tonnessen_portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Emizzari/emilie-tonnessen_portfolio/issues"
+  },
+  "homepage": "https://github.com/Emizzari/emilie-tonnessen_portfolio#readme",
+  "dependencies": {}
+}

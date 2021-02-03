@@ -1494,6 +1494,10 @@ body {
   padding: 15px;
 }
 
+.i {
+  color: #FFFFFF;
+}
+
 .nav {
   z-index: 999;
   position: relative;

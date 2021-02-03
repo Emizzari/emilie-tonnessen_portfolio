@@ -49,7 +49,7 @@
     <link rel="stylesheet" href="https://use.typekit.net/nnq4wta.css">
 
     <!-- Font Awesome: -->
-    <script src="https://kit.fontawesome.com/0011017bbe.js" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="./graphics/fa/all.css" > Not using any icons here -->
 
     <!-- CSS: -->
     <link rel="stylesheet" href="./css/style.css">

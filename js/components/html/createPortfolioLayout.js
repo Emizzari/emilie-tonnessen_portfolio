@@ -40,6 +40,8 @@ export default function createPortfolioLayout(projects){
 
                             <a class="btn btn--tertiary btn--sm" target="_blank" rel="noopener noreferrer" href="${project.linkLiveWebsite}">
                                     Nettside
+                                   
+
                                     <i class="fal fa-external-link"></i>
                             </a>
                         </div>
