@@ -21,36 +21,26 @@ export default function createPortfolioLayout(projects){
         portfolioContainer.innerHTML += `
             <section class="portfolio__card col-sm-12 col-md-6 col-lg-4">
                 <div class="portfolio__card__container">
-
                     <img src="${project.thumbnail.url}" alt="${project.title} Thumbnail" class="portfolio__card__thumbnail portfolio__card__loading">
-
                     <div class="portfolio__card__content">
                         <h5 class="portfolio__card__title portfolio__card__loading">
                             ${project.title}
                         </h5>
-
                         <div class="portfolio__card__description portfolio__card__loading">
                             ${project.description}
                         </div>
-
                         <div class="portfolio__card__buttons">
                             <a href="./project.html?id=${project.id}" class="btn btn--secondary btn--sm">
                                 Detaljer
                             </a>
-
                             <a class="btn btn--tertiary btn--sm" target="_blank" rel="noopener noreferrer" href="${project.linkLiveWebsite}">
-                                    Nettside
-                                   
-
-                                    <i class="fal fa-external-link"></i>
+                                Nettside
+                                <i class="fal fa-external-link"></i>
                             </a>
                         </div>
-
                     </div>
                 </div>
-
             </section>
-
         `;
     });
 }
