@@ -73,7 +73,7 @@
                 & p{
                     position: absolute;
                     bottom: 0;
-                    background: rgba(255, 255, 255, 0.7);
+                    background: rgba($color-white, 0.7);
                     width: 100%;
                     left: 0;
                     padding: 5px;
@@ -104,8 +104,8 @@
         & img{
             width: 100%;
             box-shadow: 
-                0 5px 10px 0 rgba(0,0,0,0.06),
-                0 5px 10px 0 rgba(0,0,0,0.06);
+                0 5px 10px 0 rgba($color-black, .06),
+                0 5px 10px 0 rgba($color-black, .06);
         }
     }
 
@@ -114,8 +114,8 @@
 
         & img{
             box-shadow: 
-                0 5px 10px 0 rgba(0,0,0,0.06),
-                0 5px 10px 0 rgba(0,0,0,0.06);
+                0 5px 10px 0 rgba($color-black, .06),
+                0 5px 10px 0 rgba($color-black, .06);
         }
 
         &--desktop{
