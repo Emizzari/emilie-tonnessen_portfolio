@@ -12447,12 +12447,8 @@ body {
   margin-bottom: 30px;
 }
 
-.project__buttons a, .project__buttons a button {
-  width: 95%;
-}
-
-.project__buttons a:last-child {
-  text-align: right;
+.project__buttons a {
+  width: calc((100% - 2rem) / 2);
 }
 
 .project__thumbnail {

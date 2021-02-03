@@ -89,19 +89,12 @@
     }
 
     &__buttons{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        @include space-between;
         margin-bottom: 30px;
 
-        & a, & a button{
-            width: 95%;
+        & a{
+            width: calc((100% - 2rem) / 2);
         }
-
-        & a:last-child{
-            text-align: right;
-        }
-
     }
 
     &__thumbnail{
