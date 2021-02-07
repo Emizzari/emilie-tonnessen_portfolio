@@ -118,13 +118,13 @@
                     </div>
 
                     <!-- Contact Form: -->
-                    <form  action="https://www.tonnessen.com/contact.php" method="post"  id="contact-form" class="col-sm-12 col-lg-6 row contact-form">
+                    <form  action="https://www.tonnessen.com/contact-sent" method="post"  id="contact-form" class="col-sm-12 col-lg-6 row contact-form">
 
                         <!-- Feedback: -->
                         <div class="feedback">
                             <?php
                                 if($message_sent){
-                                    echo("<div class='feedback--success'>Takk for meldingen, jeg vil ta kontakte deg så raskt jeg kan!</div>");
+                                    echo("<div class='feedback--success'>Takk for meldingen, jeg vil kontakte deg så raskt jeg kan!</div>");
                                 } else{
                                     echo("<div class='feedback--error'>Noe gikk galt, og meldingen ble desverre ikke sendt. Prøv på nytt.</div>");
                                 }
