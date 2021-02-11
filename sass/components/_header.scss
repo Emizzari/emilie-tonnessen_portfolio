@@ -1,33 +1,28 @@
 .header{
-    margin-top: 50px;
+    margin-top: 5rem;
 
-    @media (min-width: 1400px){
-        margin-top: 110px;
-    }
-    
-    &--bg{
-        background: rgba(49, 49, 49, 0.5);
-        margin-bottom: 50px;
+    @media (min-width: 140rem){
+        margin-top: 11rem;
     }
 
     &__headline{
         text-align: center;
         font-weight: 700;
-        font-size: clamp(35px, 5vw, 70px);
-        padding: 30px 0 50px 0;
+        font-size: clamp(3.5rem, 5vw, 7rem);
+        padding: 3rem 0 5rem 0;
 
-        @media (max-width: 576px) {
+        @media (max-width: 57.6rem) {
             text-align: center;
-            padding: 0 24px;
-            margin-bottom: 30px;
+            padding: 0 2.4rem;
+            margin-bottom: 3rem;
         }
 
         &--bg{
-            padding: 30px 20px;
+            padding: 3rem 2rem;
         }
     }
 
     &__subline{
-        font-size: clamp(20px, 3vw, 30px);
+        font-size: clamp(2rem, 3vw, 3rem);
     }
 }

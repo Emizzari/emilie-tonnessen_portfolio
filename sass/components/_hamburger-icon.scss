@@ -1,10 +1,10 @@
 .nav__menu__hamburger-icon {
-    width: 45px;
+    width: 4.5rem;
     padding: 0;
     z-index: 9999999999;
     position: absolute;
-    top: 15px;
-    right: 30px;
+    top: 1.5rem;
+    right: 3rem;
     z-index: 999;
     margin: 0;
     -webkit-transform: rotate(0deg);
@@ -15,7 +15,7 @@
     -moz-transition: 0.5s ease-in-out;
     -o-transition: 0.5s ease-in-out;
     transition: 0.5s ease-in-out;
-    height: 45px;
+    height: 4.5rem;
 
     @include respond(tab-land) {
         display: none;
@@ -28,12 +28,12 @@
     & span{
         display: block;
         position: absolute;
-        height: 4px;
+        height: .4rem;
         width: 100%;
         background: #000;
         border-radius: 9px;
         opacity: 1;
-        left: 15px;
+        left: 1.5rem;
         -webkit-transform: rotate(0deg);
         -moz-transform: rotate(0deg);
         -o-transform: rotate(0deg);
@@ -46,16 +46,16 @@
         
 
         &:nth-child(1){
-            top: 5px;
+            top: .5rem;
         }
 
         &:nth-child(2),
         &:nth-child(3) {
-            top: 20px;
+            top: 2rem;
         }
 
         &:nth-child(4) {
-            top: 35px;
+            top: 3.5rem;
         }
     }
 
@@ -65,7 +65,7 @@
 
     &.open span:nth-child(1) {
         background: white;
-        top: 18px;
+        top: 1.8rem;
         width: 0%;
         left: 50%;
     }
@@ -89,7 +89,7 @@
 
         &:nth-child(4) {
             background: white;
-            top: 18px;
+            top: 1.8rem;
             width: 0%;
             left: 50%;
         }

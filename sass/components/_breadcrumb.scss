@@ -1,6 +1,6 @@
 .breadcrumb{
     @include respond(tab-land) {
-        margin-top: clamp(40px, 8vw, 100px)
+        margin-top: clamp(4rem, 8vw, 10rem)
     }
 
     & a{
@@ -9,7 +9,7 @@
         color: colors(primary);
 
         & i{
-            margin: 0 5px;
+            margin: 0 .5rem;
         }
 
         &:hover{

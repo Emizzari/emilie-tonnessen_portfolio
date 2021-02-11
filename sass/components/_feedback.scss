@@ -6,24 +6,24 @@
     &--success{
         background: rgb(173, 216, 173);
         text-align: center;
-        padding: 15px;
+        padding: 1.5rem;
     }  
 
     &--error{
         background: colors(error);
         color: white;
         font-weight: 500;
-        margin: 0px 0 20px 0;
+        margin: 0 0 2rem 0;
         text-align: center;
-        padding: 15px;
+        padding: 1.5rem;
     } 
     
     &--warning{
         background: rgb(204, 120, 24);
         color: white;
         font-weight: 500;
-        margin: 20px 0 20px 0;
+        margin: 2rem 0 2rem 0;
         text-align: center;
-        padding: 15px;
+        padding: 1.5rem;
     } 
 }

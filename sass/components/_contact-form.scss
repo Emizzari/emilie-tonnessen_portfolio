@@ -1,20 +1,20 @@
 .contact-form{
-    padding: clamp(10px, 3vw, 30px);
+    padding: clamp(1rem, 3vw, 3rem);
     padding-top: 0;
     padding-bottom: 0;
     border-left: 0;
     z-index: 888;
-    margin-bottom: 100px;
+    margin-bottom: 10rem;
 
     @include respond(tab-port) {
-        border-left: 10px solid colors(secondary);
-        margin-bottom: 50px;
+        border-left: 1rem solid colors(secondary);
+        margin-bottom: 5rem;
     }
 
     &__section{
         display: flex;
         flex-direction: column;
-        margin: 15px 0;
+        margin: 1.5rem 0;
         padding: 0;
 
         &:first-child{
@@ -30,9 +30,9 @@
         border-radius: 0;
         border: 0;
         background: #D0E4F1;
-        margin-bottom: 5px;
+        margin-bottom: .5rem;
         z-index: 888;
-        padding: 10px 5px;
+        padding: 1rem .5rem;
         
         &::placeholder{
             color: rgba(0, 0, 0, 0.5);
@@ -43,18 +43,18 @@
         }
 
         @include respond(tab-port) {
-            padding: 15px 10px;
+            padding: 1.5rem 1rem;
         }
 
     }
 
     &__textarea{
-        height: 200px;
-        padding: 10px;
+        height: 20rem;
+        padding: 1rem;
         border-radius: 0;
         border: 0;
         background: #D0E4F1;
-        margin-bottom: 5px;
+        margin-bottom: .5rem;
 
         &::placeholder{
             color: rgba(0, 0, 0, 0.5);
@@ -66,14 +66,14 @@
     }
 
     &__submit{
-        padding: 10px 0;
+        padding: 1rem 0;
         font-size: 1.8rem;
     }
 
     &__error, &__error i{
         color: colors(error);
         font-weight: 600;
-        font-size: 14px;
+        font-size: 1.4rem;
         display: none;
     }
 }
