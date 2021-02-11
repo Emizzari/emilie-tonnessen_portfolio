@@ -15,3 +15,10 @@ This is a personal project to create a working professional portfolio website to
 
 ## Live Website
 https://www.tonnessen.com/
+
+## List of to do:
+- Varus Cosmetics API seems to not laod
+- Removing all px and replacing to rem
+- Swapping out all media queries with responsive mixin
+- adding a new section to front page (section-process)
+- minmaxing more on the design to make it more smooth
