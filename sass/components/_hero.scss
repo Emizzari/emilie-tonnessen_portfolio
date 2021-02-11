@@ -33,22 +33,22 @@
         height: 80vh;
         width: 100%;
 
-        @media (max-width: 576px) {
-            background-position: 100% 0%;
-            width: 100vw;
-        }
+        // Mobile
+        background-position: 100% 0%;
+        width: 100vw;
         
-        @media (min-width: 577px) and (max-width: 991px) {
+
+        @include respond(tab-port) {
             background-position: 50% 0%;
             width: 77vw;
         }
 
-        @media (min-width: 992px) and (max-width: 1920px) {
+        @include respond(tab-land) {
             background-position: 50% 0%;
             width: 35vw;
         }
 
-        @media (min-width: 1921px) {
+        @include respond(desk) {
             background-position: 50% 0%;
             width: 28vw;
         }
@@ -62,37 +62,36 @@
         z-index: 999;
         transform: translate(-50%, -50%);
         
-
-        @media (min-width: $width-tablet-vertical) {
+        @include respond(tab-port) {
             width: 550px;
             left: 50%;
             top: 70%;
         }
 
-        @media (min-width: $width-tablet-horizontal) {
+        @include respond(tab-land) {
             width: 650px;
             left: 40%;
             top: 70%;
         }
 
-        @media (min-width: $width-laptop)  {
+        @include respond(lap) {
             width: 700px;
             left: 40%;
             top: 70%;
         }
 
-        @media (min-width: $width-laptop-large)  {
+        @include respond(lap-lg) {
             left: 40%;
             top: 70%;
         }
 
-        @media (min-width: $width-desktop) {
+        @include respond(desk) {
             width: 750px;
             left: 35%;
             top: 70%;
         }
 
-        @media (min-width: $width-desktop-large) {
+        @include respond(desk-lg) {
             width: 850px;
             left: 35%;
             top: 70%;
@@ -121,7 +120,7 @@
             font-size: clamp(22px, 4vw, 40px);
             font-weight: 700;
 
-            @media (min-width: 1921px) {
+            @include respond(desk) {
                 font-size: 60px;
             }
 
@@ -143,7 +142,7 @@
             margin-bottom: clamp(15px, 2vh, 30px);
             line-height: clamp(2rem, 2vh, 25px);
 
-            @media (min-width: 1921px) {
+            @include respond(desk) {
                 font-size: 25px;
                 line-height: 35px;
             }

@@ -1,9 +1,7 @@
 .main {
-    @media (max-width: $width-mobile) {
-        padding: 1.5rem;
-    }
+    padding: 1.5rem;
 
-    @media (min-width: $width-laptop) {
+    @include respond(tab-port) {
         padding: 0;
     }
-}
+}  

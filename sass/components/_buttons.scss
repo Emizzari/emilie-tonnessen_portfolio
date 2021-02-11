@@ -1,5 +1,5 @@
 .btn{
-    // Standard Properties
+    &,
     &:link,
     &:visited {
         text-transform: uppercase;
@@ -99,18 +99,21 @@
     }
 
     &--sm{
-        padding: 10px 15px;
         margin: 0;
+        padding: 10px 15px;
         font-size: 16px;
 
-        @media (max-width: 576px){
-            padding: 8px 5px;
-            font-size: 10px;
-        }
+        padding: 8px 5px;
+        font-size: 10px;
 
-        @media (min-width: 992px){
+        @include respond(tab-land) {
             padding: 8px 6px;
             font-size: 11px;
+        }
+
+        @include respond(lap) {
+            padding: 10px 15px;
+            font-size: 16px;
         }
     }
 }
