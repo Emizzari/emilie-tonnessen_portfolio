@@ -24,3 +24,39 @@
         clear: both;
     }
 }
+
+
+// MEDIA QUERY
+
+
+@mixin respond($breakpoint) {
+
+    // Where Tablet starts
+    @if $breakpoint == tab-port {
+        @media (min-width: $breakpoint-tablet-portrait) { @content; }
+    }
+
+    @if $breakpoint == tab-land {
+        @media (min-width: $breakpoint-tablet-landscape) { @content; }
+    }
+
+    @if $breakpoint == lap {
+        @media (min-width: $breakpoint-laptop) { @content; }
+    }
+
+    @if $breakpoint == lap-lg {
+        @media (min-width: $breakpoint-laptop-large) { @content; }
+    }
+
+    @if $breakpoint == desk {
+        @media (min-width: $breakpoint-desktop) { @content; }
+    }
+
+    @if $breakpoint == desk-lg {
+        @media (min-width: $breakpoint-desktop-large) { @content; }
+    }
+
+    @if $breakpoint == wide {
+        @media (min-width: $breakpoint-widescreen) { @content; }
+    }
+}
