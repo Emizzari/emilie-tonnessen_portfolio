@@ -1,19 +1,26 @@
 .breadcrumb{
+    display: inline-block;
+    padding: 0 .2rem;
+    transition: border .2s;
+    font-size: clamp(1.2rem, 2.5vw, 1.6rem);
+
     @include respond(tab-land) {
         margin-top: clamp(4rem, 8vw, 10rem)
     }
 
-    & a{
-        color: colors(tertiary);
-        text-decoration: underline;
-        color: colors(primary);
+    & i{
+        margin-right: .5rem;
+    }
 
-        & i{
-            margin: 0 .5rem;
-        }
+    &:link,
+    &:visited {
+        color: colors(primary, light);
+        text-decoration: none;
+        border-bottom: 1px solid colors(primary, light);
+    }
 
-        &:hover{
-            text-decoration: none;
-        }
+    &:hover,
+    &:focus {
+        border-bottom: 1px solid transparent;
     }
 }
