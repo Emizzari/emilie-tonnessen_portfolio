@@ -8,9 +8,10 @@
     &__card{
         padding: 0 2rem;
         position: relative;
+        margin: 2rem 0;
 
-        @media (max-width: 99.1rem) {
-            margin: 2rem 0;
+        @include respond(tab-land) {
+            margin: 0;
         }
 
         &__container{
@@ -53,15 +54,7 @@
             }
 
             & a:first-child{
-                margin-right: 2rem;
-
-                @media (max-width: 99.1rem){
-                    margin-right: 1.2rem;
-                }
-
-                @media (min-width: 99.2rem){
-                    margin-right: 1.2rem;
-                }
+                margin-right: 1.2rem;
             }
         }
     }

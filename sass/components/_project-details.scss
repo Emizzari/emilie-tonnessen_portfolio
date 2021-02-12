@@ -1,6 +1,6 @@
 .project{
     &__column{
-        @media (min-width: 99.2rem) {
+        @include respond(tab-land) {
             padding-left: 6rem;
         }
     }
@@ -10,10 +10,10 @@
     }
 
     &__component{
-        margin: 10rem 0;
-
-        @media (max-width: 57.6rem) {
-            margin: 6rem 0;   
+        margin: 6rem 0;   
+        
+        @include respond(tab-port) {
+            margin: 10rem 0;
         }
 
         &:first-child{
@@ -25,9 +25,10 @@
         font-size: clamp(3rem, 15vw, 16rem);
         text-align: left;
         font-weight: 700;
-
-        @media (max-width: 57.6rem) {
-            padding: 0 1.2rem;
+        padding: 0 1.2rem;
+        
+        @include respond(tab-port) {
+            padding: 0;
         }
     }
 
@@ -126,11 +127,11 @@
             width: 40%;
             position: absolute;
             top: 2rem;
-            right: -10rem;
+            right: 0;
 
-            @media (max-width: 99.1rem) {
-                right: 0;
-            }   
+            @include respond(tab-land) {
+                right: -10rem;
+            }
         }
     }
 }

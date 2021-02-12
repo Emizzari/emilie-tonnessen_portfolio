@@ -27,11 +27,7 @@
 
 
 // MEDIA QUERY
-
-
 @mixin respond($breakpoint) {
-
-    // Where Tablet starts
     @if $breakpoint == tab-port {
         @media (min-width: $breakpoint-tablet-portrait) { @content; }
     }
