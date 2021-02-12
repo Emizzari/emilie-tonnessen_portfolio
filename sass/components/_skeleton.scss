@@ -11,29 +11,29 @@
     padding: 0;
     overflow: hidden;
     background: #FFF;
-    margin: 50px 0;
-    width: clamp(200px, 10vw, 380px);
-    width: 380px;
+    margin: 5rem 0;
+    width: clamp(20rem, 10vw, 38rem);
+    width: 38rem;
     box-shadow: 
-        0 15px 30px 0 rgba(0,0,0,0.02),
-        0 5px 15px 0 rgba(0,0,0,.02);
+        0 1.5rem 3rem 0 rgba(0,0,0,0.02),
+        0 .5rem 1.5rem 0 rgba(0,0,0,.02);
     transition: ease box-shadow 0.3s;
 
         &:hover {
             box-shadow: 
-                0 15px 60px 0 rgba(0,0,0,0.05),
-                0 5px 25px 0 rgba(0,0,0,.05);
+                0 1.5rem 6rem 0 rgba(0,0,0,0.05),
+                0 .5rem 2.5rem 0 rgba(0,0,0,.05);
             cursor: pointer;
         }
 
     &__content {
-        padding: 15px;
+        padding: 1.5rem;
     }
 
     &__thumbnail {
         margin: 0;
         padding: 0;
-        height: 200px;
+        height: 20rem;
         overflow: hidden;
 
       &.thumbnail {
@@ -43,14 +43,14 @@
     }
 
     &__headline.skeleton__loading {
-        height: 40px;
-        margin-bottom: 15px;
+        height: 4rem;
+        margin-bottom: 1.5rem;
         width: 80%;
     }
 
     &__description.skeleton__loading {
-        height: 100px;
-        margin-bottom: 15px;
+        height: 10rem;
+        margin-bottom: 1.5rem;
     }
 
     &__buttons{
@@ -58,11 +58,11 @@
         flex-direction: row;
 
         & div{
-            height: 30px;
+            height: 3rem;
             width: 100%;
 
             &:first-child{
-                margin-right: 15px;
+                margin-right: 1.5rem;
             }
         }
     }

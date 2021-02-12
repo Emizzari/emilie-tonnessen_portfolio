@@ -3,23 +3,23 @@
 
     &--bg{
         background: rgba(49, 49, 49, 0.5);
-        margin-bottom: 50px;
+        margin-bottom: 5rem;
     }
 
     &__headline{
         text-align: center;
         font-weight: 700;
-        font-size: clamp(30px, 5vw, 70px);
-        padding: 30px 0 50px 0;
+        font-size: clamp(3rem, 5vw, 7rem);
+        padding: 3rem 0 5rem 0;
 
         &--bg{
-            padding: 30px 20px;
+            padding: 3rem 2rem;
         }
     }
 
     &__subline{
         text-align: left;
         font-weight: 700;
-        padding-bottom: 5px;
+        padding-bottom: .5rem;
     }
 }

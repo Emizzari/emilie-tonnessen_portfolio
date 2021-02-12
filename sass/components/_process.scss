@@ -14,9 +14,9 @@
         text-align: center;
         display: flex;
         flex-direction: column;
-        max-width: 350px;
-        border-radius: 20px;
-        padding: clamp(10px, 2vw, 30px);
+        max-width: 35rem;
+        border-radius: 2rem;
+        padding: clamp(1rem, 2vw, 3rem);
 
         &--one{
             background-image: linear-gradient(150deg,rgba(252,90,144,0.8), rgba(149, 16, 114, 0.8));
@@ -33,12 +33,12 @@
         &__circle{
             background: rgba(255, 255, 255, 0.5);
             border-radius: 50%;
-            height: 90px;
-            width: 90px;
+            height: 9rem;
+            width: 9rem;
             margin-left: auto;
             margin-right: auto;
             position: relative;
-            margin-bottom: 30px;
+            margin-bottom: 3rem;
         }
 
         &__nr{
@@ -46,23 +46,23 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            font-size: clamp(30px, 5vw, 45px);
+            font-size: clamp(3rem, 5vw, 4.5rem);
             font-weight: 900;
         }
 
         &__title{
             font-weight: 700;
-            font-size: clamp(20px, 2vw, 30px);
-            margin-bottom: 15px;
+            font-size: clamp(2rem, 2vw, 3rem);
+            margin-bottom: 1.5rem;
         }
 
         &__text{
-            margin-bottom: 50px;
-            font-size: clamp(16px, 2vw, 18px);
+            margin-bottom: 5rem;
+            font-size: clamp(1.6rem, 2vw, 1.8rem);
         }
 
         &__icon{
-            font-size: 70px;
+            font-size: 7rem;
         }
     }
 }

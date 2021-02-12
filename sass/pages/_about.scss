@@ -1,5 +1,5 @@
 .profile-img{
-    height: clamp(400px, 10vw, 700px);
+    height: clamp(40rem, 10vw, 70rem);
     width: 100%;
     background-image: url("../graphics/about.jpg");
     @include background-image-properties;
@@ -9,16 +9,16 @@
 .about{
 
     &__container{
-        padding-top: clamp(50px, 5vh, 150px);
+        padding-top: clamp(5rem, 5vh, 15rem);
 
-        @media (min-width: 1400px){
-            margin-top: 50px;
+        @media (min-width: 140rem){
+            margin-top: 5rem;
         }
     }
 
     &__headline{
         font-weight: 700;
-        font-size: clamp(30px, 5vw, 50px);
+        font-size: clamp(3rem, 5vw, 5rem);
     }
 
     &__interests{
@@ -27,31 +27,31 @@
         &__tag{
             background: colors(secondary);
             color: colors(tertiary);
-            padding: 5px 10px;
-            margin-right: 10px;
+            padding: .5rem 1rem;
+            margin-right: 1rem;
             font-weight: 600;
             text-transform: uppercase;
-            font-size: clamp(8px, 2vw, 14px);
+            font-size: clamp(.8rem, 2vw, 1.4rem);
         }
     }
 
     &__desc{
-        padding: 25px;
-        //margin-top: 50px;
+        padding: 2.5rem;
+        //margin-top: 5rem;
 
-        @media (max-width: 576px) {
+        @media (max-width: 57.6rem) {
             padding: 0;
         }
 
         & p{
-            padding: 10px 0;
+            padding: 1rem 0;
         }
     }
 
     &__profile{
-        padding: 25px;
+        padding: 2.5rem;
 
-        @media (max-width: 576px) {
+        @media (max-width: 57.6rem) {
             padding: 0;
         }
     }
@@ -76,16 +76,16 @@
             display:flex;
             flex-direction: row;
             justify-content: space-between;
-            padding: 50px 0px;
+            padding: 5rem rem;
 
             & i{
-                font-size: clamp(23px, 3vw, 50px);
+                font-size: clamp(2.3rem, 3vw, 5rem);
                 color: rgba($color-white, 0.7);
 
             }
 
-            @media (max-width: 991px) {
-                padding: 20px 12px;
+            @media (max-width: 99.1rem) {
+                padding: 2rem 1.2rem;
             }
         }
     }
