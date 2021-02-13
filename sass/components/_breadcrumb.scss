@@ -4,8 +4,8 @@
     transition: border .2s;
     font-size: clamp(1.2rem, 2.5vw, 1.6rem);
 
-    @include respond(tab-land) {
-        margin-top: clamp(4rem, 8vw, 10rem)
+    @include respond(tab-port) {
+        margin-top: clamp(2rem, 3vw, 5rem)
     }
 
     & i{
