@@ -22,16 +22,20 @@
     }
 
     &__interests{
-        @include space-between;
+        @include row;
 
         &__tag{
             background: colors(secondary);
             color: colors(tertiary);
             padding: .5rem 1rem;
-            margin-right: 1rem;
+            
             font-weight: 600;
             text-transform: uppercase;
-            font-size: clamp(.8rem, 2vw, 1.4rem);
+            font-size: clamp(.75rem, 2vw, 1.4rem);
+
+            &:not(:last-child) {
+                margin-right: clamp(.5rem, 1.5vw, 1rem);
+            }
         }
     }
 
@@ -60,9 +64,10 @@
         padding: 0;
         @include space-between;
 
+        & a,
         & a:visited,
         & a:link {
-            width: calc((100% - 2 * 2rem) / 3);
+            width: calc((100% - 2 * clamp(1rem, 2vw, 2rem)) / 3);
             padding: 1rem 0.5rem;
             
         }

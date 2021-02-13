@@ -11,6 +11,11 @@
     justify-content: space-between;
 }
 
+@mixin row {
+    display: flex;
+    flex-direction: row;  
+}
+
 @mixin background-image-properties {
     background-repeat: no-repeat;
     background-size: cover;
