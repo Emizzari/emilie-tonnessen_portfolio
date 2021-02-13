@@ -1,14 +1,20 @@
 .contact-form{
-    padding: clamp(1rem, 3vw, 3rem);
-    padding-top: 0;
-    padding-bottom: 0;
-    border-left: 0;
+    //padding: clamp(1rem, 3vw, 3rem);
+    //padding-top: 0;
+    //padding-bottom: 0;
+    // border-left: 0;
     z-index: 888;
     margin-bottom: 10rem;
+    // width: 100%;
+    padding: 0;
+    
 
-    @include respond(tab-port) {
+    @include respond(tab-land) {
         border-left: 1rem solid colors(secondary);
+        padding-left: 3rem;
         margin-bottom: 5rem;
+        //width: 40%;
+        display: block;
     }
 
     &__section{

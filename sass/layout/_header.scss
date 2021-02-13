@@ -1,23 +1,21 @@
 .header{
-    &--bg{
-        background: rgba(49, 49, 49, 0.5);
-        margin-bottom: 5rem;
-    }
+    margin: 3rem 0 2rem 0;
 
-    &__headline{
-        text-align: center;
-        font-weight: 700;
+    @include respond(lap-lg) {
+        margin-top: 11rem;
+    }
+}
+
+.headline {
+    text-align: left; 
+    font-weight: 700;
+
+    &--primary {
         font-size: clamp(3rem, 5vw, 7rem);
-        padding: 3rem 0 5rem 0;
-
-        &--bg{
-            padding: 3rem 2rem;
-        }
     }
 
-    &__subline{
-        text-align: left;
-        font-weight: 700;
-        padding-bottom: .5rem;
-    }
+    &--secondary {
+        font-size: clamp(2rem, 3vw, 3rem);
+        margin-bottom: .5rem;
+    }    
 }

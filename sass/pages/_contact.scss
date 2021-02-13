@@ -1,4 +1,7 @@
 .section-contact{
-    padding-right: 3rem;
     display: inline-block;
+
+    @include respond(tab-land) {
+        padding-right: 3rem;
+    }
 }

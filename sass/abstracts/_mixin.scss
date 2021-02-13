@@ -16,6 +16,11 @@
     flex-direction: row;  
 }
 
+@mixin column {
+    display: flex;
+    flex-direction: column;  
+}
+
 @mixin background-image-properties {
     background-repeat: no-repeat;
     background-size: cover;

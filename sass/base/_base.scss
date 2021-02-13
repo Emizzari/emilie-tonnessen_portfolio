@@ -12,8 +12,7 @@ html {
 }
 
 body {  
-    display: flex;
-    flex-direction: column;
+    @include column;
     box-sizing: border-box;  
     @include html-body;
 }
