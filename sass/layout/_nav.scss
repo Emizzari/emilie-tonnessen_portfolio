@@ -36,6 +36,12 @@
             margin-right: 15rem;
             margin-left: auto;
         }
+
+        @include respond(desk-lg) {
+            max-width: 150rem;
+            padding-left: 100rem;
+            margin: 0 auto;
+        }
     }
 
     // Menu

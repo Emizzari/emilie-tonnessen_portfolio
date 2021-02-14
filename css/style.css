@@ -12689,6 +12689,14 @@ body {
   }
 }
 
+@media (min-width: 150em) {
+  .nav--landingpage {
+    max-width: 150rem;
+    padding-left: 100rem;
+    margin: 0 auto;
+  }
+}
+
 .nav__menu {
   text-transform: uppercase;
   width: 75vw;
@@ -12901,7 +12909,7 @@ body {
   left: 0;
 }
 
-@media (min-width: 100em) {
+@media (min-width: 150em) {
   .brand--landingpage {
     font-size: 30rem;
   }
@@ -12919,15 +12927,14 @@ body {
   z-index: 777;
   color: #FFFFFF;
   position: absolute;
-  line-height: clamp(5rem, 14vw, 25rem);
-  padding: 1.2rem;
   top: 0;
   left: 0;
+  line-height: clamp(5rem, 14vw, 25rem);
+  padding: 1.2rem;
 }
 
 .brand__last-name--landingpage {
   padding: 1.2rem;
-  z-index: 777;
   position: absolute;
   line-height: clamp(5rem, 14vw, 25rem);
   background: -webkit-linear-gradient(#FFFFFF, transparent);

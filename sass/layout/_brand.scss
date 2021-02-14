@@ -2,7 +2,7 @@
     position: relative;
     color: colors(primary);
     text-transform: uppercase;
-    font-family: fieldwork-hum, sans-serif;
+    font-family: $font-heading;
     font-weight: 700;
     font-style: normal;
     text-decoration: none;
@@ -58,7 +58,7 @@
         top: 0;
         left: 0;
 
-        @include respond(desk) {
+        @include respond(desk-lg) {
             font-size: 30rem;
         }
 
@@ -75,15 +75,14 @@
         z-index: 777;
         color: $color-white;
         position: absolute;
-        line-height: clamp(5rem, 14vw, 25rem);
-        padding: 1.2rem;
         top: 0;
         left: 0;
+        line-height: clamp(5rem, 14vw, 25rem);
+        padding: 1.2rem;
     }
         
     &__last-name--landingpage{
         padding: 1.2rem;
-        z-index: 777;
         position: absolute;
         line-height: clamp(5rem, 14vw, 25rem);
         background: -webkit-linear-gradient($color-white, transparent);
