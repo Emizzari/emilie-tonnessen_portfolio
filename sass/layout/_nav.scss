@@ -23,26 +23,26 @@
 
     &--landingpage{
         @include respond(tab-land) {
-            max-width: 96rem;
-            padding-left: 40rem;
-            margin-right: 15rem;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr; 
+            max-width: 50rem;
             margin-left: auto;
+            margin-right: 2rem;
+            line-height: 10vh;
         }
 
         @include respond(desk) {
-            max-width: 132rem;
-            padding-left: 40rem;
+            max-width: 55rem;
             margin-right: 15rem;
             margin-left: auto;
         }
     }
 
-
     // Menu
     &__menu{
         text-transform: uppercase;
 
-        // Mobile
+        // Mobile 
         width: 75vw;
         height: 100vh;
         position: absolute;
@@ -143,10 +143,14 @@
             position: absolute;
             top: 0;
             right: 0;
-            
-            
             width: 50rem;
             height: 15rem;
+        }
+
+        &--landingpage div {
+            @include respond(desk) {
+                width: 60rem;
+            }
         }
 
         &--light div{
