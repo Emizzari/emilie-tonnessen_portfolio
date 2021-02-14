@@ -1,32 +1,3 @@
-<?php
-    $message_sent = false;
-
-    if(isset($_POST['email']) && $_POST['email'] != ''){
-
-        if( filter_var($_POST['email'], FILTER_VALIDATE_EMAIL) ){
-            $userName = $_POST['name'];
-            $userEmail = $_POST['email'];
-            $topic = $_POST['topic'];
-            $message = $_POST['message'];
-
-            $to = "emilie@tonnessen.com";
-            $subject = "$topic \r\n";
-            $body = "";
-
-            $body .= "<div><strong>From: </strong>" .$userName. "</div>";
-            $body .= "<div><strong>Email: </strong>".$userEmail. "</div>";
-            $body .= "<div><strong>Message:</strong></div><p>".$message. "</p>";
-
-            $mailheader = "Fra: $email \r\n";
-            $mailheader .= 'Content-type: text/html; charset=utf-8' . "\r\n";
-        }
-
-        mail($to, $subject, $body, $mailheader);
-
-        $message_sent = true;
-    }
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -77,10 +48,10 @@
                         <a href="./portfolio.html" class="nav__menu__list__link">Portfolio</a>
                     </li>
                     <li >
-                        <a href="./about.html" class="nav__menu__list__link">Om Meg</a>
+                        <a href="./om-meg.html" class="nav__menu__list__link">Om Meg</a>
                     </li>
                     <li>
-                        <a href="./contact.html" class="nav__menu__list__link nav__menu__list__link--active">Kontakt</a>
+                        <a href="./kontakt.html" class="nav__menu__list__link nav__menu__list__link--active">Kontakt</a>
                     </li>
                 </ul>
             </div>
@@ -126,19 +97,10 @@
                     </div>
 
                     <!-- Contact Form: -->
-                    <form  action="https://www.tonnessen.com/contact-sent" method="post"  id="contact-form" class="col-sm-12 col-lg-6  contact-form">
+                    <form  action="https://www.tonnessen.com/kontakt-sent" method="post"  id="contact-form" class="col-sm-12 col-lg-6  contact-form">
                         <div class="row margin-auto bs-gutter-none">
-
-                        <!-- Feedback: -->
-                        <div class="feedback">
-                            <?php
-                                if($message_sent){
-                                    echo("<div class='feedback--success'>Takk for meldingen, jeg vil kontakte deg så raskt jeg kan!</div>");
-                                } else{
-                                    echo("<div class='feedback--error'>Noe gikk galt, og meldingen ble desverre ikke sendt. Prøv på nytt.</div>");
-                                }
-                            ?>
-                        </div>
+                            <!-- Feedback: -->
+                            <div class="feedback"></div> 
 
                             <!-- Name: -->
                             <section class="col-12 contact-form__section">
