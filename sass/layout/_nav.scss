@@ -21,34 +21,9 @@
         padding: 0 1.2rem;
     }
 
-    &--landingpage{
-        @include respond(tab-land) {
-            grid-template-columns: 1fr;
-            grid-template-rows: 1fr; 
-            max-width: 50rem;
-            margin-left: auto;
-            margin-right: 2rem;
-            line-height: 10vh;
-        }
-
-        @include respond(desk) {
-            max-width: 55rem;
-            margin-right: 15rem;
-            margin-left: auto;
-        }
-
-        @include respond(desk-lg) {
-            max-width: 150rem;
-            padding-left: 100rem;
-            margin: 0 auto;
-        }
-    }
-
     // Menu
     &__menu{
         text-transform: uppercase;
-
-        // Mobile 
         width: 75vw;
         height: 100vh;
         position: absolute;
@@ -74,8 +49,6 @@
             justify-content: flex-end;
             color: $color-white;
             list-style: none;
-        
-            // Mobile
             margin-top: 6rem;
             flex-direction: column;
             line-height: 10vh;
@@ -83,7 +56,6 @@
             @include respond(tab-land) {
                 flex-direction: row;
                 justify-content: flex-end;
-                //text-align: center;
                 margin: 0;
                 padding: 0;
                 height: unset;
@@ -106,10 +78,10 @@
                     padding: 0 2rem;
                     width: 100%;
                     color: colors(tertiary);
-                    
                 }
 
-                &:hover{
+                &:hover,
+                &:focus {
                     color: colors(secondary);
                 }
 
@@ -120,14 +92,6 @@
 
                 &--active{
                     color: colors(secondary);
-                }
-
-                &--landingpage{
-                    color: $color-white;
-
-                    &:hover{
-                        color: colors(secondary);
-                    }
                 }
             }
         }
@@ -140,6 +104,10 @@
         margin: 0;
         z-index: 1;
         display: none;
+        right: 0;
+        width: 50rem;
+        height: 15rem;
+
 
         @include respond(tab-land) { 
             display: unset;
@@ -148,11 +116,9 @@
         & div{
             position: absolute;
             top: 0;
-
             right: -30px;
             border-top: 1px solid rgba(255, 255, 255, 0.5);
             border-right: 1px solid rgba(255, 255, 255, 0.5);
-
             right: 0;
             width: 50rem;
             height: 15rem;
@@ -160,18 +126,6 @@
             @include respond(desk) {
                 width: 80rem;
                 right: -5rem;
-            }
-        }
-
-            right: 0;
-            width: 50rem;
-            height: 15rem;
-        }
-
-
-        &--landingpage div {
-            @include respond(desk) {
-                width: 60rem;
             }
         }
 
@@ -185,7 +139,48 @@
             border-right: 1px solid rgba($color-black, 0.2);
         }
     }
+}
 
+// Landingpage
+.nav {
+    &--landingpage{
+        @include respond(tab-land) {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr; 
+            max-width: 50rem;
+            margin-left: auto;
+            margin-right: 2rem;
+            line-height: 10vh;
+        }
+
+        @include respond(desk) {
+            max-width: 55rem;
+            margin-right: 15rem;
+            margin-left: auto;
+        }
+
+        @include respond(desk-lg) {
+            max-width: 150rem;
+            padding-left: 100rem;
+            margin: 0 auto;
+        }
+    }
+
+    &__link--landingpage{
+        color: $color-white;
+
+        &:hover,
+        &:focus{
+            color: colors(secondary);
+        }
+    }
+
+    &__decor--landingpage div {
+        @include respond(desk) {
+            width: 60rem;
+        }
+    }
+}
 
 
 .open-menu{

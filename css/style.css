@@ -12674,35 +12674,6 @@ body {
   }
 }
 
-@media (min-width: 56.25em) {
-  .nav--landingpage {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    -ms-grid-rows: 1fr;
-        grid-template-rows: 1fr;
-    max-width: 50rem;
-    margin-left: auto;
-    margin-right: 2rem;
-    line-height: 10vh;
-  }
-}
-
-@media (min-width: 100em) {
-  .nav--landingpage {
-    max-width: 55rem;
-    margin-right: 15rem;
-    margin-left: auto;
-  }
-}
-
-@media (min-width: 150em) {
-  .nav--landingpage {
-    max-width: 150rem;
-    padding-left: 100rem;
-    margin: 0 auto;
-  }
-}
-
 .nav__menu {
   text-transform: uppercase;
   width: 75vw;
@@ -12788,7 +12759,7 @@ body {
   }
 }
 
-.nav__menu__list__link:hover {
+.nav__menu__list__link:hover, .nav__menu__list__link:focus {
   color: #FFBF5F;
 }
 
@@ -12798,14 +12769,6 @@ body {
 }
 
 .nav__menu__list__link--active {
-  color: #FFBF5F;
-}
-
-.nav__menu__list__link--landingpage {
-  color: #FFFFFF;
-}
-
-.nav__menu__list__link--landingpage:hover {
   color: #FFBF5F;
 }
 
@@ -12844,20 +12807,57 @@ body {
   }
 }
 
-@media (min-width: 100em) {
-  .nav--landingpage div {
-    width: 60rem;
-  }
-}
-
-.nav--light div {
+.nav__decor--light div {
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   border-right: 1px solid rgba(255, 255, 255, 0.5);
 }
 
-.nav--dark div {
+.nav__decor--dark div {
   border-top: 1px solid rgba(0, 0, 0, 0.2);
   border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 56.25em) {
+  .nav--landingpage {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    max-width: 50rem;
+    margin-left: auto;
+    margin-right: 2rem;
+    line-height: 10vh;
+  }
+}
+
+@media (min-width: 100em) {
+  .nav--landingpage {
+    max-width: 55rem;
+    margin-right: 15rem;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: 150em) {
+  .nav--landingpage {
+    max-width: 150rem;
+    padding-left: 100rem;
+    margin: 0 auto;
+  }
+}
+
+.nav__link--landingpage {
+  color: #FFFFFF;
+}
+
+.nav__link--landingpage:hover, .nav__link--landingpage:focus {
+  color: #FFBF5F;
+}
+
+@media (min-width: 100em) {
+  .nav__decor--landingpage div {
+    width: 60rem;
+  }
 }
 
 .open-menu {
