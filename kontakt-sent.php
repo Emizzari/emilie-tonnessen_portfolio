@@ -93,7 +93,7 @@
             </div>    
 
             <!-- Hamburger Icon: -->
-            <div class="nav__menu__hamburger-icon ">
+            <div class="nav__menu__hamburger-icon nav__icon">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -204,7 +204,6 @@
     </footer>
 
     <!-- JavaScript: -->
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="./js/contact.js" type="module"></script>
 
 </body>
