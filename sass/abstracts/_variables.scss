@@ -28,14 +28,13 @@ $font-body: montserrat, sans-serif;
 $font-heading: fieldwork-hum, sans-serif;
 $font-elegant: dolce, sans-serif;
 
-// Media Query
-$width-mobile: 576px;
-$width-tablet-vertical: 768px;
-$width-tablet-horizontal: 992px;
-$width-laptop: 1200px;
-$width-laptop-large: 1400px;
-$width-desktop: 1920px;
-$width-desktop-large: 2560px;
-$width-widescreen: 3440px;
+// Media Query Breakpoints (min-width)
+$breakpoint-tablet-portrait: 37.5em;       //    600 px
+$breakpoint-tablet-landscape:  56.25em;    //    900 px
+$breakpoint-laptop: 81.25em;               //   1300 px
+$breakpoint-laptop-large:  87.5em;         //   1400 px
+$breakpoint-desktop: 100em;                //   1600 px
+$breakpoint-desktop-large: 150em;          //   2400 px
+$breakpoint-widescreen: 200em;             //   3200 px
 
 // Add Box shadow properties

@@ -2,9 +2,9 @@
     text-decoration: underline;
 
     &--cta{
-        color: #FFF;
-        font-size: 18px;
-        margin-left: 30px;
+        color: $color-white;
+        font-size: 1.8rem;
+        margin-left: 3rem;
         text-transform: uppercase;
 
         &:hover{

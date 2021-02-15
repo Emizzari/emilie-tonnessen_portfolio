@@ -27,7 +27,9 @@
     }
 ?>
 
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!-- Technical: -->
     <meta charset="UTF-8">
@@ -51,19 +53,21 @@
     <link rel="icon" href="./graphics/logo-icon.png" type="image/gif" sizes="16x16">
 
     <!-- Page Title: -->
-    <title>Emilie Tonnessen | Contact</title>
+    <title>Emilie Tonnessen | Kontakt</title>
 </head>
+
 <body>
     <!-- Wrapper: -->
     <div class="wrapper">
+
 
         <!-- Navigation: -->
         <nav class="nav">
 
             <!-- Brand -->
-            <a href="https://www.tonnessen.com/" class="nav__brand">
-                <div class="nav__brand__first-name col-12">Emilie</div>
-                <div class="nav__brand__last-name col-12">Tønnessen</div>
+            <a href="https://www.tonnessen.com/" class="brand">
+                <div class="brand__first-name col-12">Emilie</div>
+                <div class="brand__last-name col-12">Tønnessen</div>
             </a>
 
             <!-- Menu -->
@@ -73,10 +77,10 @@
                         <a href="./portfolio.html" class="nav__menu__list__link">Portfolio</a>
                     </li>
                     <li >
-                        <a href="./about.html" class="nav__menu__list__link">Om Meg</a>
+                        <a href="./om-meg.html" class="nav__menu__list__link">Om Meg</a>
                     </li>
                     <li>
-                        <a href="./contact.html" class="nav__menu__list__link nav__menu__list__link--active">Kontakt</a>
+                        <a href="./kontakt.html" class="nav__menu__list__link nav__menu__list__link--active">Kontakt</a>
                     </li>
                 </ul>
             </div>
@@ -97,28 +101,33 @@
             </div>
         </nav>
 
+
         <!-- Header: -->
         <header class="header">
-            <h1 class="header__headline">
-                lets have a chat!
-            </h1>
+            <div class="container">
+                <h1 class="headline headline--primary">
+                    Kontakt meg
+                </h1>
+            </div>
         </header>
 
+        <!-- Main: -->
         <main class="main">
             <div class="container">
-                <div class="row">
+                <div class="row margin-auto bs-gutter-none"> 
 
 
 
-                    <div class="col-sm-12 col-lg-6">
-                        <h2 class="header__subline">Gratis og uforpliktende konsultasjon</h2>
+                    <div class="col-sm-12 col-lg-6 section-contact">
+                        <h2 class="headline headline--secondary">Gratis og uforpliktende konsultasjon</h2>
                         <p class="paragraph">
                             Kontakt meg gjerne for en gratis og uforpliktende konsultasjon. Vi ser sammen på hva du kunne tenke deg, hva dine behov er, og hvordan jeg videre kan hjelpe deg.
                         </p>
                     </div>
 
                     <!-- Contact Form: -->
-                    <form  action="https://www.tonnessen.com/contact-sent" method="post"  id="contact-form" class="col-sm-12 col-lg-6 row contact-form">
+                    <form  action="https://www.tonnessen.com/contact-sent" method="post"  id="contact-form" class="col-sm-12 col-lg-6  contact-form">
+                        <div class="row margin-auto bs-gutter-none">
 
                         <!-- Feedback: -->
                         <div class="feedback">
@@ -131,49 +140,52 @@
                             ?>
                         </div>
 
-                        <!-- Name: -->
-                        <section class="col-12 contact-form__section">
-                            <!-- <label for="name" class="contact-form__label">Name: </label> -->
-                            <input name="name" id="name" class="contact-form__input" type="text" placeholder="Kari Nordman">
+                            <!-- Name: -->
+                            <section class="col-12 contact-form__section">
+                                <!-- <label for="name" class="contact-form__label">Name: </label> -->
+                                <input name="name" id="name" class="contact-form__input" type="text" placeholder="Kari Nordman">
 
 
-                            <div class="contact-form__error contact-form__error--name">
-                                <i class="fal fa-exclamation-triangle"></i> Please enter your name
+                                <div class="contact-form__error contact-form__error--name">
+                                    <i class="fal fa-exclamation-triangle"></i> Skriv inn ditt fulle navn
+                                </div>
+                            </section>
+
+                            <!-- Email: -->
+                            <section class="col-12 contact-form__section">
+                                <!-- <label for="email" class="contact-form__label">Email: </label> -->
+                                <input name="email" id="email" class="contact-form__input" type="text" placeholder="kari@norman.no">
+                                <div class="contact-form__error contact-form__error--email">
+                                    <i class="fal fa-exclamation-triangle"></i> Skriv inn en gyldig mail adresse
+                                </div>
+                            </section>
+
+                            <!-- Topic: -->
+                            <section class="col-12 contact-form__section">
+                                <!-- <label for="topic" class="contact-form__label">Topic: </label> -->
+                                <input name="topic" id="topic" class="contact-form__input" type="text" placeholder="Emne..">
+                                <div class="contact-form__error contact-form__error--topic">
+                                    <i class="fal fa-exclamation-triangle"></i> Skriv et emne
+                                </div>
+                            </section>
+
+                            <!-- Message -->
+                            <section class="col-12 contact-form__section">
+                                <!-- <label for="message" class="contact-form__label">Topic: </label> -->
+                                <textarea name="message" id="message" class="contact-form__textarea" type="text" placeholder="Skriv din melding her.."></textarea>
+
+                                <div class="contact-form__error contact-form__error--message">
+                                    <i class="fal fa-exclamation-triangle"></i> Skriv mer en 5 bokstaver
+                                </div>
+                            </section>
+
+                            <!-- Submit Button: -->
+                            <div class="col-12 contact-form__section">
+                                <input name="submit" type="submit" class="submit contact-form__submit btn btn--primary" value="SEND">
                             </div>
-                        </section>
-
-                        <!-- Email: -->
-                        <section class="col-12 contact-form__section">
-                            <!-- <label for="email" class="contact-form__label">Email: </label> -->
-                            <input name="email" id="email" class="contact-form__input" type="text" placeholder="kari@norman.no">
-                            <div class="contact-form__error contact-form__error--email">
-                                <i class="fal fa-exclamation-triangle"></i> Please enter a valid email address
-                            </div>
-                        </section>
-
-                        <!-- Topic: -->
-                        <section class="col-12 contact-form__section">
-                            <!-- <label for="topic" class="contact-form__label">Topic: </label> -->
-                            <input name="topic" id="topic" class="contact-form__input" type="text" placeholder="Emne..">
-                            <div class="contact-form__error contact-form__error--topic">
-                                <i class="fal fa-exclamation-triangle"></i> Please enter a topic
-                            </div>
-                        </section>
-
-                        <!-- Message -->
-                        <section class="col-12 contact-form__section">
-                            <!-- <label for="message" class="contact-form__label">Topic: </label> -->
-                            <textarea name="message" id="message" class="contact-form__textarea" type="text" placeholder="Skriv din melding her.."></textarea>
-
-                            <div class="contact-form__error contact-form__error--message">
-                                <i class="fal fa-exclamation-triangle"></i> Please write a longer message
-                            </div>
-                        </section>
-
-                        <!-- Submit Button: -->
-                        <div class="col-12 contact-form__section">
-                            <input name="submit" type="submit" class="submit contact-form__submit btn btn--primary" value="SEND">
                         </div>
+
+                       
                     </form>
 
 
@@ -194,5 +206,7 @@
     <!-- JavaScript: -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="./js/contact.js" type="module"></script>
+
 </body>
+
 </html>

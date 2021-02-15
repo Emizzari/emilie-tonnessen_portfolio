@@ -6,6 +6,7 @@
 @import "./abstracts/mixin";
 @import "./abstracts/maps";
 @import "./abstracts/functions";
+@import "./abstracts/custom-bootstrap";
 
 // Base
 @import "./base/typography";
@@ -19,7 +20,6 @@
 @import "./components/buttons";
 @import "./components/links";
 @import "./components/process";
-@import "./components/header";
 @import "./components/contact-form";
 @import "./components/portfolio";
 @import "./components/skeleton";
@@ -33,12 +33,12 @@
 
 // Layout
 @import "./layout/nav";
+@import "./layout/brand";
 @import "./layout/footer";
 @import "./layout/header";
-@import "./layout/main";
 @import "./layout/grid";
 
 // Pages
 @import "./pages/about";
 @import "./pages/contact";
-@import "./pages/home";
+@import "./pages/home"; 

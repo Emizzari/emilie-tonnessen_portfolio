@@ -9,6 +9,8 @@ body{
 h1, h2, h3, h4, h5, h6{
     font-family: $font-heading;
     text-transform: uppercase;
+    line-height: 1.7;
+    margin: 0;
 }
 
 .paragraph{
@@ -21,14 +23,14 @@ h1, h2, h3, h4, h5, h6{
 
 .font-style--elegant{
     font-family: $font-elegant;
-    font-size: clamp(22px, 5vw, 40px);
+    font-size: clamp(2.2rem, 5vw, 4rem);
     font-weight: 500;
     color: colors(secondary);
 }
 
 .font-style--userfriendly{
     font-family: $font-heading;
-    font-size: clamp(16px, 2vw, 25px);
+    font-size: clamp(1.6rem, 2vw, 2.5rem);
     font-weight: 600;
     color: colors(secondary);
 }

@@ -1,0 +1,115 @@
+.brand {
+    position: relative;
+    color: colors(primary);
+    text-transform: uppercase;
+    font-family: $font-heading;
+    font-weight: 700;
+    font-style: normal;
+    text-decoration: none;
+    font-size: clamp(3rem, 5vw, 10rem); 
+    padding: 1rem;
+
+    @include respond(tab-land) {
+        padding: 1rem 0;
+    }
+
+    &:hover, 
+    &:active,
+    &:focus{
+        color: colors(primary);
+    } 
+        
+    &__first-name{
+        position: relative;
+        line-height: clamp(3rem, 5vw, 10rem);
+    }
+
+    &__last-name{
+        line-height: clamp(3rem, 5vw, 10rem);
+        margin-left: 2rem;
+        background: -webkit-linear-gradient( colors(primary), $color-white);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        z-index: 777;
+
+        @include respond(lap-lg) {
+            margin-left: 5rem;
+        }
+
+        &:hover,
+        &:focus{
+            background: -webkit-linear-gradient( colors(primary), $color-white);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+}
+
+// Landingpage
+
+.brand { 
+    &--landingpage{
+        z-index: 777;
+        font-size: clamp(5rem, 14vw, 25rem); 
+        color: $color-white;
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        @include respond(desk-lg) {
+            font-size: 30rem;
+        }
+
+        & a {
+            color: $color-white;
+
+            &:hover{
+                color: colors(secondary);
+            }
+        }
+    }
+
+    &__first-name--landingpage{
+        z-index: 777;
+        color: $color-white;
+        position: absolute;
+        top: 0;
+        left: 0;
+        line-height: clamp(5rem, 14vw, 25rem);
+        padding: 1.2rem;
+    }
+        
+    &__last-name--landingpage{
+        padding: 1.2rem;
+        position: absolute;
+        line-height: clamp(5rem, 14vw, 25rem);
+        background: -webkit-linear-gradient($color-white, transparent);
+        background-clip: text;
+        -webkit-background-clip: text; 
+        -webkit-text-fill-color: transparent;
+        top: clamp(5.5rem, 15vw, 9rem);
+        left: .8rem;
+
+        @include respond(tab-port) {
+            top: 12rem;
+            left: 3rem;
+        }
+
+        @include respond(tab-land) {
+            top: 14rem;
+            left: 3rem;
+        }
+
+        @include respond(desk) {
+            top: 30rem;
+            left: 10rem;
+        }
+
+        &:hover,
+        &:focus{
+            background: -webkit-linear-gradient(transparent colors(secondary));
+        }
+    }
+}

@@ -1,5 +1,5 @@
 .profile-img{
-    height: clamp(400px, 10vw, 700px);
+    height: clamp(40rem, 10vw, 70rem);
     width: 100%;
     background-image: url("../graphics/about.jpg");
     @include background-image-properties;
@@ -7,43 +7,38 @@
 }
 
 .about{
-<<<<<<< Updated upstream
-
-    &__container{
-        padding-top: clamp(50px, 5vh, 150px);
-
-        @media (min-width: 1400px){
-            margin-top: 50px;
-        }
-=======
     margin-top: clamp(5rem, 5vh, 15rem);
     
     @include respond(desk) {
         margin-top: 5rem;
->>>>>>> Stashed changes
     }
 
     
 
     &__headline{
         font-weight: 700;
-        font-size: clamp(30px, 5vw, 50px);
+        font-size: clamp(3rem, 5vw, 5rem);
     }
 
     &__interests{
-        @include space-between;
+        @include row;
 
         &__tag{
             background: colors(secondary);
             color: colors(tertiary);
-<<<<<<< Updated upstream
+
             padding: 5px 10px;
             margin-right: 10px;
             font-weight: 600;
             text-transform: uppercase;
             font-size: clamp(8px, 2vw, 14px);
-=======
+
             padding: .5rem 1rem;
+            font-weight: 600;
+            text-transform: uppercase;
+
+            padding: .5rem 1rem;
+            
             font-weight: 600;
             text-transform: uppercase;
             font-size: clamp(.75rem, 2vw, 1.4rem);
@@ -52,45 +47,50 @@
                 margin-right: clamp(.5rem, 1.5vw, 1rem);
             }
 
-            @include respond(tab-land) {
+
+            @include respond(tab-land) { 
                 font-size: 1.2rem;
             }
 
             @include respond(lap) {
                 font-size: 1.4rem;
             }
->>>>>>> Stashed changes
+
         }
     }
 
     &__desc{
-        padding: 25px;
-        //margin-top: 50px;
+        padding: 0;
 
-<<<<<<< Updated upstream
+
         @media (max-width: 576px) {
             padding: 0;
-=======
+        }
+
         @include respond(tab-port) {
             padding-right: 5rem;
->>>>>>> Stashed changes
+        }
+
+        @include respond(tab-port) {
+            padding: 2.5rem;
+
         }
 
         & p{
-            padding: 10px 0;
+            padding: 1rem 0;
         }
     }
 
     &__profile{
-<<<<<<< Updated upstream
-        padding: 25px;
 
-        @media (max-width: 576px) {
-            padding: 0;
-        }
-=======
+        padding: 25px;
         padding: 0;
->>>>>>> Stashed changes
+
+        @include respond(tab-port) {
+            padding: 2.5rem;
+        }
+
+        padding: 0;
     }
 
     &__buttons{
@@ -98,9 +98,10 @@
         padding: 0;
         @include space-between;
 
+        & a,
         & a:visited,
         & a:link {
-            width: calc((100% - 2 * 2rem) / 3);
+            width: calc((100% - 2 * clamp(1rem, 2vw, 2rem)) / 3);
             padding: 1rem 0.5rem;
             
         }
@@ -113,16 +114,16 @@
             display:flex;
             flex-direction: row;
             justify-content: space-between;
-            padding: 50px 0px;
+            padding: 2rem 1.2rem;
 
             & i{
-                font-size: clamp(23px, 3vw, 50px);
+                font-size: clamp(2.3rem, 3vw, 5rem);
                 color: rgba($color-white, 0.7);
 
             }
 
-            @media (max-width: 991px) {
-                padding: 20px 12px;
+            @include respond(tab-land) {
+                padding: 5rem 0;
             }
         }
     }

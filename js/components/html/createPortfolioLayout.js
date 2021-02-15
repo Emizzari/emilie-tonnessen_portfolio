@@ -30,7 +30,7 @@ export default function createPortfolioLayout(projects){
                             ${project.description}
                         </div>
                         <div class="portfolio__card__buttons">
-                            <a href="./project.html?id=${project.id}" class="btn btn--secondary btn--sm">
+                            <a href="./prosjekt.html?id=${project.id}" class="btn btn--secondary btn--sm">
                                 Detaljer
                             </a>
                             <a class="btn btn--tertiary btn--sm" target="_blank" rel="noopener noreferrer" href="${project.linkLiveWebsite}">

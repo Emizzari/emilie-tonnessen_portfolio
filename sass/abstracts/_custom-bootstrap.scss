@@ -1,0 +1,68 @@
+// Grid breakpoints
+// Define the minimum dimensions at which your layout will change, adapting to different screen sizes, for use in media queries.
+$grid-breakpoints: (
+  xs: 0,
+  sm: $breakpoint-tablet-portrait,
+  md: $breakpoint-tablet-landscape,
+  lg: $breakpoint-laptop,
+  xl: $breakpoint-desktop,
+  xxl: $breakpoint-desktop-large
+);
+
+// Grid Containers max-widths
+$container-max-widths: (
+  sm: $breakpoint-tablet-portrait,
+  md: $breakpoint-tablet-landscape,
+  lg: $breakpoint-laptop,
+  xl: $breakpoint-desktop,
+  xxl: $breakpoint-desktop-large
+);
+
+
+// Grid columns
+//
+// Set the number of columns and specify the width of the gutters.
+
+$grid-columns:                12 ;
+$grid-gutter-width:           1.5rem ;
+$grid-row-columns:            6 ;
+
+$gutters: $spacers ;
+
+// Container padding
+
+$container-padding-x: $grid-gutter-width / 2 ;
+
+// Spacing
+//
+// Control the default styling of most Bootstrap elements by modifying these
+// variables. Mostly focused on spacing.
+// You can add more entries to the $spacers map, should you need more variation.
+$spacer: 1rem ;
+$spacers: (
+  0: 0,
+  1: $spacer / 4,
+  2: $spacer / 2,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+) ;
+
+$negative-spacers: if($enable-negative-margins, negativify-map($spacers), null); 
+
+
+
+// Row fixes for mobile
+.row { 
+    margin: 0 !important; 
+    --bs-gutter-x: none !important; 
+    --bs-gutter-y: none !important; 
+
+    @include respond(tab-port) {
+        --bs-gutter-x: 1.5rem;
+        --bs-gutter-y: 0;
+        margin-top: calc(var(--bs-gutter-y) * -1);
+        margin-right: calc(var(--bs-gutter-x) / -2);
+        margin-left: calc(var(--bs-gutter-x) / -2);
+    }
+}

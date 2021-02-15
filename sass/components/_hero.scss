@@ -33,22 +33,22 @@
         height: 80vh;
         width: 100%;
 
-        @media (max-width: 576px) {
-            background-position: 100% 0%;
-            width: 100vw;
-        }
+        // Mobile
+        background-position: 100% 0%;
+        width: 100vw;
         
-        @media (min-width: 577px) and (max-width: 991px) {
+
+        @include respond(tab-port) {
             background-position: 50% 0%;
             width: 77vw;
         }
 
-        @media (min-width: 992px) and (max-width: 1920px) {
+        @include respond(tab-land) {
             background-position: 50% 0%;
             width: 35vw;
         }
 
-        @media (min-width: 1921px) {
+        @include respond(desk) {
             background-position: 50% 0%;
             width: 28vw;
         }
@@ -58,42 +58,41 @@
         position: absolute;
         left: 50%;
         top: 80%;
-        width: clamp(250px, 90vw, 700px);
+        width: clamp(25rem, 90vw, 70rem);
         z-index: 999;
         transform: translate(-50%, -50%);
         
-
-        @media (min-width: $width-tablet-vertical) {
-            width: 550px;
+        @include respond(tab-port) {
+            width: 55rem;
             left: 50%;
             top: 70%;
         }
 
-        @media (min-width: $width-tablet-horizontal) {
-            width: 650px;
+        @include respond(tab-land) {
+            width: 65rem;
             left: 40%;
             top: 70%;
         }
 
-        @media (min-width: $width-laptop)  {
-            width: 700px;
+        @include respond(lap) {
+            width: 70rem;
             left: 40%;
             top: 70%;
         }
 
-        @media (min-width: $width-laptop-large)  {
+        @include respond(lap-lg) {
             left: 40%;
             top: 70%;
         }
 
-        @media (min-width: $width-desktop) {
-            width: 750px;
+        @include respond(desk) {
+            width: 75rem;
             left: 35%;
             top: 70%;
         }
 
-        @media (min-width: $width-desktop-large) {
-            width: 850px;
+        @include respond(desk-lg) {
+            width: 85rem;
             left: 35%;
             top: 70%;
         }
@@ -105,10 +104,8 @@
             rgba(colors(primary, light), .6),  
             rgba(colors(primary, dark), .7), 
             rgba(colors(tertiary, dark), .8));
-        border-radius: 5px;
-        padding: clamp(10px, 2vw, 25px);
-        backdrop-filter: blur(5px);
-        -webkit-backdrop-filter: blur(5px);
+        border-radius: .5rem;
+        padding: clamp(1rem, 2vw, 2.5rem);
         backface-visibility: hidden;
         
         &--animated{
@@ -118,16 +115,16 @@
 
         &__headline{
             text-transform: uppercase;
-            font-size: clamp(22px, 4vw, 40px);
+            font-size: clamp(2.2rem, 4vw, 4rem);
             font-weight: 700;
 
-<<<<<<< Updated upstream
-            @media (min-width: 1921px) {
-                font-size: 60px;
-=======
             @include respond(desk) {
                 font-size: 5rem;
->>>>>>> Stashed changes
+            }
+
+            @include respond(desk) {
+                font-size: 6rem;
+
             }
 
             &--style{
@@ -139,24 +136,24 @@
         &__profession-tag{
             color: rgba(255, 255, 255, 0.575);
             display: flex;
-            font-size: clamp(10px, 1vw, 16px);
-            margin-bottom: 15px;
+            font-size: clamp(1rem, 1vw, 1.6rem); 
+            margin-bottom: 1.5rem;
         }
 
         &__text{
-            font-size: clamp(14px, 2vw, 20px);
-            margin-bottom: clamp(15px, 2vh, 30px);
-            line-height: clamp(2rem, 2vh, 25px);
+            font-size: clamp(1.4rem, 2vw, 2rem);
+            margin-bottom: clamp(1.5rem, 2vh, 3rem);
+            line-height: clamp(2rem, 2vh, 2.5rem);
 
-            @media (min-width: 1921px) {
-                font-size: 25px;
-                line-height: 35px;
+            @include respond(desk) {
+                font-size: 2.5rem;
+                line-height: 3.5rem;
             }
         }
 
         &__cta{
             @include space-between;
-            margin-bottom: clamp(15px 3vh, 30px);
+            margin-bottom: clamp(1.5rem 3vh, 3rem);
             
             & a {
                 width: calc((100% - 2rem) / 2);
