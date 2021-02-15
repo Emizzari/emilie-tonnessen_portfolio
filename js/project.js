@@ -6,4 +6,4 @@ import { menuIcon } from "./components/abstracts/variables.js";
 
 menuIcon.addEventListener("click", mobileMenu);
 
-fetchAPI(creatProjectDetails, projectDetailsURL);
+//fetchAPI(creatProjectDetails, projectDetailsURL);

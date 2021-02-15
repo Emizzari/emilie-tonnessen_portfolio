@@ -11416,6 +11416,10 @@ body {
           flex: 1 0 auto;
 }
 
+.u-text-align-center {
+  text-align: center !important;
+}
+
 .nav__menu__hamburger-icon {
   width: 4.5rem;
   padding: 0;
@@ -12048,29 +12052,22 @@ body {
   display: none;
 }
 
-.portfolio {
-  margin-bottom: clamp(5rem, 5vw, 15rem);
-}
-
-.portfolio__container {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.portfolio__card {
+.card {
   padding: 0 2rem;
   position: relative;
   margin: 2rem 0;
+  display: inline-block;
+  border: 0;
+  border-radius: 0;
 }
 
 @media (min-width: 56.25em) {
-  .portfolio__card {
+  .card {
     margin: 0;
   }
 }
 
-.portfolio__card__container {
+.card__container {
   -webkit-box-shadow: 0 1.5rem 3rem 0 rgba(0, 0, 0, 0.05), 0 0.5rem 1.5rem 0 rgba(0, 0, 0, 0.05);
           box-shadow: 0 1.5rem 3rem 0 rgba(0, 0, 0, 0.05), 0 0.5rem 1.5rem 0 rgba(0, 0, 0, 0.05);
   -webkit-transition: -webkit-transform .3s;
@@ -12079,31 +12076,31 @@ body {
   transition: transform .3s, -webkit-transform .3s;
 }
 
-.portfolio__card__container:hover {
+.card__container:hover {
   -webkit-transform: translateY(-1.5rem) scale(1.03);
           transform: translateY(-1.5rem) scale(1.03);
 }
 
-.portfolio__card__thumbnail {
+.card__thumbnail {
   width: 100%;
 }
 
-.portfolio__card__content {
+.card__content {
   padding: 1.5rem;
 }
 
-.portfolio__card__title {
+.card__title {
   font-weight: 600;
   font-size: clamp(1.8rem, 5vw, 2rem);
   margin-bottom: .5rem;
 }
 
-.portfolio__card__description {
+.card__description {
   font-size: clamp(1.3rem, 2vw, 1.6rem);
   margin-bottom: 2rem;
 }
 
-.portfolio__card__buttons {
+.card__buttons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -12116,11 +12113,11 @@ body {
           justify-content: space-between;
 }
 
-.portfolio__card__buttons a, .portfolio__card__buttons button {
+.card__buttons a, .card__buttons button {
   width: 100%;
 }
 
-.portfolio__card__buttons a:first-child {
+.card__buttons a:first-child {
   margin-right: 1.2rem;
 }
 
@@ -13220,5 +13217,15 @@ body {
 .body--home {
   background: #00629B;
   color: #FFFFFF;
+}
+
+.portfolio {
+  margin-bottom: clamp(5rem, 5vw, 15rem);
+}
+
+.portfolio__container {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,7 @@
+.portfolio{
+    margin-bottom: clamp(5rem, 5vw, 15rem);
+
+    &__container{
+        justify-content: space-between;
+    }
+}
