@@ -1,0 +1,27 @@
+.project-section {
+    display: block;
+    min-height: 90vh;
+    width: 100vw;
+    padding: 15rem 0;
+
+    &--brief {
+        background-color: $color-white;
+    }
+
+    &--graphics {
+        background-color: $color-white;
+    }
+
+    &--development {
+        background-color: colors(tertiary);
+        color: $color-white;
+    }
+
+    &--typography {
+        background-color: $color-white;
+    }
+
+    &--logo {
+        background-color: $color-white;
+    }
+}
