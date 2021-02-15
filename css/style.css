@@ -11420,6 +11420,10 @@ body {
   text-align: center !important;
 }
 
+.u-margin-top-lg {
+  margin-top: 6rem !important;
+}
+
 .nav__menu__hamburger-icon {
   width: 4.5rem;
   padding: 0;
@@ -13196,13 +13200,14 @@ body {
 
 .project-section {
   display: block;
-  min-height: 90vh;
+  min-height: 100vh;
   width: 100vw;
   padding: 15rem 0;
 }
 
 .project-section--brief {
   background-color: #FFFFFF;
+  padding: 0 0 15rem 0;
 }
 
 .project-section--graphics {
@@ -13215,10 +13220,106 @@ body {
 }
 
 .project-section--typography {
-  background-color: #FFFFFF;
+  background-color: #1A1A1A;
+  color: #FFFFFF;
 }
 
 .project-section--logo {
   background-color: #FFFFFF;
+}
+
+.project-section__headline {
+  font-size: 6rem;
+  font-weight: 800;
+  letter-spacing: 4px;
+  color: #00629B;
+}
+
+.project-section__title {
+  font-size: 4rem;
+}
+
+.brief__content {
+  padding-right: 5rem;
+}
+
+.brief__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.brief__buttons a {
+  width: calc((100% - 2rem) / 2);
+}
+
+.brief__device-gallery {
+  position: relative;
+}
+
+.brief__photo {
+  margin: 2rem 0;
+  -webkit-box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
+  position: absolute;
+  cursor: pointer;
+  z-index: 10;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.brief__photo--desktop {
+  width: 90%;
+  top: 0;
+  left: 0;
+}
+
+.brief__photo--mobile {
+  width: 40%;
+  top: 4rem;
+  right: 0;
+}
+
+.brief__photo--tablet {
+  width: 70%;
+  top: 20rem;
+  left: 10%;
+}
+
+.brief__photo:hover, .brief__photo:focus {
+  -webkit-transform: scale(1.05) translateY(-0.5rem);
+          transform: scale(1.05) translateY(-0.5rem);
+  -webkit-box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+          box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+  z-index: 20;
+}
+
+.dev__tag {
+  display: inline-block;
+  padding: .5rem 1.5rem;
+  border-radius: 1.5rem;
+  margin: 0;
+}
+
+.dev__tag:not(:last-child) {
+  margin-right: 1.5rem;
+}
+
+.dev__tag--language {
+  background-color: #00629B;
+  color: #FFFFFF;
+}
+
+.dev__tag--framework {
+  background-color: #FFBF5F;
+  color: #000000;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,27 +1,117 @@
 .project-section {
     display: block;
-    min-height: 90vh;
+    min-height: 100vh;
     width: 100vw;
     padding: 15rem 0;
+    
 
     &--brief {
         background-color: $color-white;
+        padding: 0 0 15rem 0;
     }
 
     &--graphics {
         background-color: $color-white;
     }
-
+ 
     &--development {
         background-color: colors(tertiary);
         color: $color-white;
     }
 
     &--typography {
-        background-color: $color-white;
+        background-color: colors(tertiary);
+        color: $color-white;
     }
 
     &--logo {
         background-color: $color-white;
+    }
+
+    &__headline {
+        font-size: 6rem;
+        font-weight: 800;
+        letter-spacing: 4px;
+        color: colors(primary);
+    }
+
+    &__title {
+        font-size: 4rem;
+    }
+}
+
+.brief {
+    &__content {
+        padding-right: 5rem;
+    }
+
+    &__buttons {
+        @include space-between;
+        margin-bottom: 2rem;
+        
+        & a {
+            width: calc((100% - 2rem) / 2);
+        }
+    }
+
+    &__device-gallery {
+        position: relative;
+    }
+
+    &__photo {
+        margin: 2rem 0;
+        box-shadow: 0 1.5rem 3rem rgba($color-black, .2);
+        position: absolute;
+        cursor: pointer;
+        z-index: 10;
+        transition: all .2s;
+
+        &--desktop {
+            width: 90%;
+            top: 0;
+            left: 0;
+        }
+
+        &--mobile {
+            width: 40%;
+            top: 4rem;
+            right: 0;
+        }
+
+        &--tablet {
+            width: 70%; 
+            top: 20rem;
+            left: 10%;
+        }
+
+        &:hover,
+        &:focus {
+            transform: scale(1.05) translateY(-.5rem);
+            box-shadow: 0 2.5rem 4rem rgba($color-black, .5);
+            z-index: 20;
+        }
+    }
+}
+
+.dev {
+    &__tag {
+        display: inline-block;
+        padding: .5rem 1.5rem;
+        border-radius: 1.5rem;
+        margin: 0;
+
+        &:not(:last-child) {
+            margin-right: 1.5rem;
+        }
+        
+        &--language {
+            background-color: colors(primary);
+            color: $color-white;
+        }
+
+        &--framework {
+            background-color: colors(secondary);
+            color: $color-black;
+        }
     }
 }
