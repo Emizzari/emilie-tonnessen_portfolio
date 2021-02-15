@@ -121,8 +121,13 @@
             font-size: clamp(22px, 4vw, 40px);
             font-weight: 700;
 
+<<<<<<< Updated upstream
             @media (min-width: 1921px) {
                 font-size: 60px;
+=======
+            @include respond(desk) {
+                font-size: 5rem;
+>>>>>>> Stashed changes
             }
 
             &--style{

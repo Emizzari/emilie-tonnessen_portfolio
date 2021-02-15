@@ -259,9 +259,21 @@
             height: 150px;
             position: absolute;
             top: 0;
+<<<<<<< Updated upstream
             right: -30px;
             border-top: 1px solid rgba(255, 255, 255, 0.5);
             border-right: 1px solid rgba(255, 255, 255, 0.5);
+=======
+            right: 0;
+            width: 50rem;
+            height: 15rem;
+
+            @include respond(desk) {
+                width: 80rem;
+                right: -5rem;
+            }
+        }
+>>>>>>> Stashed changes
 
             
         }

@@ -7,6 +7,7 @@
 }
 
 .about{
+<<<<<<< Updated upstream
 
     &__container{
         padding-top: clamp(50px, 5vh, 150px);
@@ -14,7 +15,15 @@
         @media (min-width: 1400px){
             margin-top: 50px;
         }
+=======
+    margin-top: clamp(5rem, 5vh, 15rem);
+    
+    @include respond(desk) {
+        margin-top: 5rem;
+>>>>>>> Stashed changes
     }
+
+    
 
     &__headline{
         font-weight: 700;
@@ -27,11 +36,30 @@
         &__tag{
             background: colors(secondary);
             color: colors(tertiary);
+<<<<<<< Updated upstream
             padding: 5px 10px;
             margin-right: 10px;
             font-weight: 600;
             text-transform: uppercase;
             font-size: clamp(8px, 2vw, 14px);
+=======
+            padding: .5rem 1rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: clamp(.75rem, 2vw, 1.4rem);
+
+            &:not(:last-child) {
+                margin-right: clamp(.5rem, 1.5vw, 1rem);
+            }
+
+            @include respond(tab-land) {
+                font-size: 1.2rem;
+            }
+
+            @include respond(lap) {
+                font-size: 1.4rem;
+            }
+>>>>>>> Stashed changes
         }
     }
 
@@ -39,8 +67,13 @@
         padding: 25px;
         //margin-top: 50px;
 
+<<<<<<< Updated upstream
         @media (max-width: 576px) {
             padding: 0;
+=======
+        @include respond(tab-port) {
+            padding-right: 5rem;
+>>>>>>> Stashed changes
         }
 
         & p{
@@ -49,11 +82,15 @@
     }
 
     &__profile{
+<<<<<<< Updated upstream
         padding: 25px;
 
         @media (max-width: 576px) {
             padding: 0;
         }
+=======
+        padding: 0;
+>>>>>>> Stashed changes
     }
 
     &__buttons{
