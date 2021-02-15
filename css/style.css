@@ -12704,7 +12704,7 @@ body {
   }
 }
 
-.nav__menu__list {
+.nav__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -12722,7 +12722,7 @@ body {
 }
 
 @media (min-width: 56.25em) {
-  .nav__menu__list {
+  .nav__list {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -12737,12 +12737,12 @@ body {
   }
 }
 
-.nav__menu__list li {
+.nav__list li {
   width: 100%;
   text-align: center;
 }
 
-.nav__menu__list__link {
+.nav__link {
   color: #FFFFFF;
   text-align: center;
   font-weight: 600;
@@ -12752,35 +12752,30 @@ body {
 }
 
 @media (min-width: 56.25em) {
-  .nav__menu__list__link {
+  .nav__link {
     padding: 0 2rem;
     width: 100%;
     color: #1A1A1A;
   }
 }
 
-.nav__menu__list__link:hover, .nav__menu__list__link:focus {
+.nav__link:hover, .nav__link:focus {
   color: #FFBF5F;
 }
 
-.nav__menu__list__link:active {
+.nav__link:active {
   color: #FFBF5F;
   outline: 1px solid rgba(0, 0, 0, 0.5);
 }
 
-.nav__menu__list__link--active {
+.nav__link--active {
   color: #FFBF5F;
 }
 
 .nav__decor {
   position: relative;
-  padding: 0;
-  margin: 0;
-  z-index: 1;
   display: none;
-  right: 0;
-  width: 50rem;
-  height: 15rem;
+  z-index: 1;
 }
 
 @media (min-width: 56.25em) {
@@ -12792,10 +12787,9 @@ body {
 .nav__decor div {
   position: absolute;
   top: 0;
-  right: -30px;
+  right: 0;
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   border-right: 1px solid rgba(255, 255, 255, 0.5);
-  right: 0;
   width: 50rem;
   height: 15rem;
 }
@@ -12857,6 +12851,7 @@ body {
 @media (min-width: 100em) {
   .nav__decor--landingpage div {
     width: 60rem;
+    right: -5rem;
   }
 }
 
