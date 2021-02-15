@@ -43,61 +43,60 @@
             backdrop-filter: blur(0);
             align-self: center;
         }
+    }
 
-        &__list{
-            display: flex;
-            justify-content: flex-end;
-            color: $color-white;
-            list-style: none;
-            margin-top: 6rem;
-            flex-direction: column;
-            line-height: 10vh;
+    &__list{
+        display: flex;
+        justify-content: flex-end;
+        color: $color-white;
+        list-style: none;
+        margin-top: 6rem;
+        flex-direction: column;
+        line-height: 10vh;
             
-            @include respond(tab-land) {
-                flex-direction: row;
-                justify-content: flex-end;
-                margin: 0;
-                padding: 0;
-                height: unset;
-                line-height: unset;
-            }
-
-            & li{
-                width: 100%;
-                text-align: center;
-            }
-
-            &__link{
-                color: $color-white;
-                text-align: center;
-                font-weight: 600;
-                text-decoration: none;
-                transition: .2s all;
-
-                @include respond(tab-land){
-                    padding: 0 2rem;
-                    width: 100%;
-                    color: colors(tertiary);
-                }
-
-                &:hover,
-                &:focus {
-                    color: colors(secondary);
-                }
-
-                &:active{
-                    color: colors(secondary);
-                    outline: 1px solid rgba($color-black, 0.5);
-                }
-
-                &--active{
-                    color: colors(secondary);
-                }
-            }
+        @include respond(tab-land) {
+            flex-direction: row;
+            justify-content: flex-end;
+            margin: 0;
+            padding: 0;
+            height: unset;
+            line-height: unset;
         }
-    } 
 
-    // Decoration
+        & li{
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    &__link{
+        color: $color-white;
+        text-align: center;
+        font-weight: 600;
+        text-decoration: none;
+        transition: .2s all;
+
+        @include respond(tab-land){
+            padding: 0 2rem;
+            width: 100%;
+            color: colors(tertiary);
+        }
+
+        &:hover,
+        &:focus {
+            color: colors(secondary);
+        }
+
+        &:active{
+            color: colors(secondary);
+            outline: 1px solid rgba($color-black, 0.5);
+        }
+
+        &--active{
+            color: colors(secondary);
+        }
+    }
+
     &__decor{
         position: relative;
         padding: 0;
