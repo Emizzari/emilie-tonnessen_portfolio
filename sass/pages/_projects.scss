@@ -94,11 +94,15 @@
 }
 
 .dev {
+
+
+
     &__tag {
         display: inline-block;
         padding: .5rem 1.5rem;
         border-radius: 1.5rem;
         margin: 0;
+        font-weight: 600;
 
         &:not(:last-child) {
             margin-right: 1.5rem;
@@ -111,7 +115,49 @@
 
         &--framework {
             background-color: colors(secondary);
-            color: $color-black;
+            color: colors(tertiary);
         }
     }
+
+    &__desc {
+        margin-top: 3rem;
+    }
+
+    &__features {
+        padding-left: 5rem;
+
+        & ul {
+            list-style: none;
+
+            & li {
+                line-height: 3;
+                font-size: 2rem;
+                font-family: $font-heading;
+                //font-style: italic;
+                font-weight: 200;
+            }
+        }
+    }
+
+    &__icon {
+        font-size: 3rem;
+        color: colors(primary, light);
+        margin-right: 1rem;
+    }
+}
+
+.graphics {
+    &__moodboard {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        & div {
+            width: 30%;
+            padding-top: 30%;
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+    } 
 }
