@@ -13307,6 +13307,7 @@ body {
   padding: .5rem 1.5rem;
   border-radius: 1.5rem;
   margin: 0;
+  font-weight: 600;
 }
 
 .dev__tag:not(:last-child) {
@@ -13320,6 +13321,76 @@ body {
 
 .dev__tag--framework {
   background-color: #FFBF5F;
-  color: #000000;
+  color: #1A1A1A;
+}
+
+.dev__desc {
+  margin-top: 3rem;
+}
+
+.dev__features {
+  padding-left: 5rem;
+}
+
+.dev__features ul {
+  list-style: none;
+}
+
+.dev__features ul li {
+  line-height: 3;
+  font-size: 2rem;
+  font-family: fieldwork-hum, sans-serif;
+  font-weight: 200;
+}
+
+.dev__icon {
+  font-size: 3rem;
+  color: #0082ce;
+  margin-right: 1rem;
+}
+
+.graphics__moodboard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.graphics__moodboard div {
+  width: 30%;
+  padding-top: 30%;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.rkk__color--primary {
+  background-color: #033474;
+}
+
+.rkk__color--secondary {
+  background-color: #0581E8;
+}
+
+.rkk__color--tertiary {
+  background-color: #000000;
+}
+
+.rkk__moodboard--1 {
+  background-image: url("../graphics/projects/risorklatreklubb/thumbnail.png");
+}
+
+.rkk__moodboard--2 {
+  background-image: url("../graphics/projects/risorklatreklubb/thumbnail.png");
+}
+
+.rkk__moodboard--3 {
+  background-image: url("../graphics/projects/risorklatreklubb/thumbnail.png");
 }
 /*# sourceMappingURL=style.css.map */
