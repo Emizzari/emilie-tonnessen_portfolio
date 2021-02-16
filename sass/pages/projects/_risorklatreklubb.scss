@@ -1,0 +1,29 @@
+.rkk {
+    &__color {
+        &--primary {
+            background-color: #033474;
+        }
+
+        &--secondary {
+            background-color: #0581E8;
+        }
+
+        &--tertiary {
+            background-color: #000000;
+        }
+    }
+
+    &__moodboard {
+        &--1 {
+            background-image: url("../graphics/projects/risorklatreklubb/thumbnail.png");
+        }
+
+        &--2 {
+            background-image: url("../graphics/projects/risorklatreklubb/thumbnail.png");
+        }
+
+        &--3 {
+            background-image: url("../graphics/projects/risorklatreklubb/thumbnail.png");
+        }
+    }
+}    
