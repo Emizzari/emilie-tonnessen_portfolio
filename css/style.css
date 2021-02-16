@@ -13370,6 +13370,102 @@ body {
   background-repeat: no-repeat;
 }
 
+.graphics__design-element {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 6rem;
+  height: 100%;
+}
+
+.typography__side--left {
+  border-bottom: 1px solid white;
+  border-left: 1px solid white;
+}
+
+.typography__side--right {
+  border-top: 1px solid white;
+  border-right: 1px solid white;
+}
+
+.typography__nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.typography__nav li {
+  display: inline-block;
+}
+
+.typography__nav li:not(:last-child) {
+  margin-right: 1.5rem;
+}
+
+.typography__list {
+  list-style: none;
+  text-align: right;
+  padding: 5rem 5rem 0 0;
+}
+
+.typography__list li:not(:last-child) {
+  margin-bottom: 3rem;
+}
+
+.typography__link, .typography__link:link, .typography__link:active {
+  color: white;
+  text-align: right;
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 600;
+  -webkit-transition: .2s ease;
+  transition: .2s ease;
+  text-decoration: none;
+}
+
+.typography__link:hover, .typography__link:focus {
+  color: #FFBF5F;
+}
+
+.logo__desc {
+  padding-right: 5rem;
+}
+
+.logo__gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.logo__img {
+  width: 100%;
+}
+
+.logo__photo-box {
+  position: relative;
+}
+
+.logo__photo-box:not(:last-child) {
+  margin-bottom: 3rem;
+}
+
+.logo__photo-text {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-bottom: 0;
+  padding: .5rem 1rem;
+}
+
+.logo__photo-text--grey {
+  background-color: rgba(212, 212, 212, 0.5);
+}
+
 .rkk__color--primary {
   background-color: #033474;
 }
@@ -13383,14 +13479,58 @@ body {
 }
 
 .rkk__moodboard--1 {
-  background-image: url("../graphics/projects/risorklatreklubb/thumbnail.png");
+  background-image: url("../graphics/projects/risorklatreklubb/moodboard-1.jpg");
 }
 
 .rkk__moodboard--2 {
-  background-image: url("../graphics/projects/risorklatreklubb/thumbnail.png");
+  background-image: url("../graphics/projects/risorklatreklubb/moodboard-2.jpg");
 }
 
 .rkk__moodboard--3 {
-  background-image: url("../graphics/projects/risorklatreklubb/thumbnail.png");
+  background-image: url("../graphics/projects/risorklatreklubb/moodboard-3.jpg");
+}
+
+.rkk__design-element {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(5, 129, 232, 0.9)), to(rgba(3, 52, 116, 0.9))), url("../graphics/projects/risorklatreklubb/hero.jpg");
+  background-image: linear-gradient(to bottom right, rgba(5, 129, 232, 0.9), rgba(3, 52, 116, 0.9)), url("../graphics/projects/risorklatreklubb/hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100% 50%;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  width: 100%;
+  display: block;
+  height: 100%;
+}
+
+.rkk__font--heading-primary {
+  font-family: sofia-pro, sans-serif;
+  text-transform: uppercase;
+  font-size: 5rem;
+  font-weight: 300;
+  letter-spacing: 7px;
+}
+
+.rkk__font--heading-secondary {
+  font-family: sofia-pro, sans-serif;
+  text-transform: uppercase;
+  font-size: 5rem;
+}
+
+.rkk__font--sub-heading {
+  font-family: sofia-pro, sans-serif;
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+
+.rkk__font--nav {
+  font-family: termina, sans-serif;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+.rkk__font--body {
+  font-family: montserrat, sans-serif;
+  font-size: 1.6rem;
 }
 /*# sourceMappingURL=style.css.map */
