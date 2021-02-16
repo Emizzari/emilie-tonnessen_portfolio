@@ -15,15 +15,62 @@
 
     &__moodboard {
         &--1 {
-            background-image: url("../graphics/projects/risorklatreklubb/thumbnail.png");
+            background-image: url("../graphics/projects/risorklatreklubb/moodboard-1.jpg");
         }
 
         &--2 {
-            background-image: url("../graphics/projects/risorklatreklubb/thumbnail.png");
+            background-image: url("../graphics/projects/risorklatreklubb/moodboard-2.jpg");
         }
 
         &--3 {
-            background-image: url("../graphics/projects/risorklatreklubb/thumbnail.png");
+            background-image: url("../graphics/projects/risorklatreklubb/moodboard-3.jpg");
+        }
+    }
+
+    &__design-element {
+        background-image: 
+            linear-gradient(to bottom right, rgba(#0581E8 , 0.9), rgba(#033474, .9)), 
+            url("../graphics/projects/risorklatreklubb/hero.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 100% 50%;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+        width: 100%;
+        display: block;
+        height: 100%;
+    }
+
+    &__font {
+        &--heading-primary {
+            font-family: sofia-pro, sans-serif;
+            text-transform: uppercase;
+            font-size: 5rem;
+            font-weight: 300;
+            letter-spacing: 7px;
+        }
+
+        &--heading-secondary {
+            font-family: sofia-pro, sans-serif;
+            text-transform: uppercase;
+            font-size: 5rem;
+        }
+
+        &--sub-heading {
+            font-family: sofia-pro, sans-serif;
+            text-transform: uppercase;
+            font-size: 3rem;
+        }
+
+        &--nav {
+            font-family: termina, sans-serif;
+            text-transform: uppercase;
+            font-size: 2rem;
+        }
+
+        &--body {
+            font-family: montserrat, sans-serif;
+            font-size: 1.6rem;
         }
     }
 }    
