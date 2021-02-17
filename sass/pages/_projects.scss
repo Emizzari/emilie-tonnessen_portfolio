@@ -31,7 +31,7 @@
         background-color: $color-white;
         padding: 0 0 15rem 0;
 
-        @include respond(desk) {
+        @include respond(desk-lg) {
             min-height: 70vh;
         }
         
