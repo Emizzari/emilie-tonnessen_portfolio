@@ -13278,7 +13278,13 @@ body {
 }
 
 .project-section__title {
-  font-size: 4rem;
+  font-size: 3rem;
+}
+
+@media (min-width: 37.5em) {
+  .project-section__title {
+    font-size: 4rem;
+  }
 }
 
 .rkk__color--primary {
@@ -13409,6 +13415,7 @@ body {
 
 .brief__buttons a {
   width: calc((100% - 2rem) / 2);
+  padding: 1rem 1rem !important;
 }
 
 .brief__device-gallery {
@@ -13470,6 +13477,37 @@ body {
   -webkit-box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
           box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
   z-index: 20;
+}
+
+.course-brief__course-title {
+  font-size: 1.6rem;
+  color: #696969;
+}
+
+@media (min-width: 37.5em) {
+  .course-brief__course-title {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 56.25em) {
+  .course-brief__side--left {
+    padding-right: 5rem;
+  }
+}
+
+.course-brief__diploma {
+  width: 100%;
+  -webkit-box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.15);
+          box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.15);
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  cursor: pointer;
+}
+
+.course-brief__diploma:hover, .course-brief__diploma:focus {
+  -webkit-transform: translateY(-3rem) scale(1.05);
+          transform: translateY(-3rem) scale(1.05);
 }
 
 .dev__tag {
