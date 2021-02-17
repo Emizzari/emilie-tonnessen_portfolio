@@ -18,6 +18,11 @@
     &--brief {
         background-color: $color-white;
         padding: 0 0 15rem 0;
+
+        @include respond(desk) {
+            min-height: 70vh;
+        }
+        
     }
 
     &--graphics {
@@ -64,6 +69,10 @@
     &__buttons {
         @include space-between;
         margin: 2rem 0;
+
+        @include respond(tab-land) {
+            margin-top: 0;
+        }
         
         & a {
             width: calc((100% - 2rem) / 2);

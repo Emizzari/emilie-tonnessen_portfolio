@@ -13222,6 +13222,12 @@ body {
   padding: 0 0 15rem 0;
 }
 
+@media (min-width: 100em) {
+  .project-section--brief {
+    min-height: 70vh;
+  }
+}
+
 .project-section--graphics {
   background-color: #FFFFFF;
 }
@@ -13275,6 +13281,12 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 2rem 0;
+}
+
+@media (min-width: 56.25em) {
+  .brief__buttons {
+    margin-top: 0;
+  }
 }
 
 .brief__buttons a {
