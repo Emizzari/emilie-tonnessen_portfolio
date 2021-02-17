@@ -1,0 +1,73 @@
+.brief {
+    &__content {
+        @include respond(tab-land) {
+            padding-right: 5rem;
+        }
+    }
+
+    &__buttons {
+        @include space-between;
+        margin: 2rem 0;
+
+        @include respond(tab-land) {
+            margin-top: 0;
+        }
+        
+        & a {
+            width: calc((100% - 2rem) / 2);
+        }
+    }
+
+    &__device-gallery {
+        position: relative;
+        height: 35rem;
+        margin-top: 3rem;
+
+        @include respond(tab-port) {
+            margin-top: 5rem;
+            height: 65rem;
+        }
+
+        @include respond(tab-land) {
+            height: 100%;
+        }
+    }
+
+    &__photo {
+        //margin: 2rem 0;
+        box-shadow: 0 1.5rem 3rem rgba($color-black, .2);
+        position: absolute;
+        cursor: pointer;
+        z-index: 10;
+        transition: all .2s;
+
+        &--desktop {
+            width: 90%;
+            top: 0;
+            left: 0;
+        }
+
+        &--mobile {
+            width: 40%;
+            top: 4rem;
+            right: 0;
+        }
+
+        &--tablet {
+            width: 70%; 
+            top: 10rem;
+            left: 10%;
+
+            @include respond(tab-land) {
+                top: 20rem;
+            }
+        }
+
+        &:hover,
+        &:focus {
+            transform: scale(1.05) translateY(-.5rem);
+            box-shadow: 0 2.5rem 4rem rgba($color-black, .5);
+            z-index: 20;
+        }
+    }
+}

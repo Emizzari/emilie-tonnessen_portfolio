@@ -1,0 +1,39 @@
+.logo {
+
+    &__desc {
+        @include respond(tab-land) {
+            padding-right: 5rem;
+        }
+    }
+
+    &__gallery {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__img {
+        width: 100%;
+    }
+
+    &__photo-box {
+        position: relative;
+        
+        &:not(:last-child) {
+            margin-bottom: 3rem;
+        }
+    }
+
+    &__photo-text {
+        width: 100%;
+        background-color: rgba($color-white, .8);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        margin-bottom: 0;
+        padding: .5rem 1rem;
+
+        &--grey{
+            background-color: rgba($color-grey, .5);
+        }
+    }
+}

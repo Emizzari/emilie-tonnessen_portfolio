@@ -1,0 +1,25 @@
+.graphics {
+    &__moodboard {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        & div {
+            width: 30%;
+            padding-top: 30%;
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+    } 
+
+    &__design-element {
+        display: flex;
+        height: 40rem;
+
+        @include respond(tab-land) {
+            height: 100%;
+            padding-left: 6rem;
+        }
+    }
+}
