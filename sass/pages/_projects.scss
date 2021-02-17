@@ -67,7 +67,11 @@
     }
 
     &__title {
-        font-size: 4rem;
+        font-size: 3rem;
+
+        @include respond(tab-port) {
+            font-size: 4rem;
+        }
     }
 }
 
