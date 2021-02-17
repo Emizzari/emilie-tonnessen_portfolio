@@ -1,0 +1,31 @@
+.course-brief {
+
+    &__course-title {
+        font-size: 1.6rem;
+        color: $color-grey-dark;
+
+        @include respond(tab-port) {
+            font-size: 3rem;
+        }
+    }
+
+    &__side {
+        &--left {
+            @include respond(tab-land) {
+                padding-right: 5rem;
+            }
+        }
+    }
+
+    &__diploma {
+        width: 100%;
+        box-shadow: 0 1.5rem 2rem rgba($color-black, .15);
+        transition: all .2s;
+        cursor: pointer;
+
+        &:hover,
+        &:focus {
+            transform: translateY(-3rem) scale(1.05);
+        }
+    }
+}
