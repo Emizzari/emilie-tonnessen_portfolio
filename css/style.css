@@ -13287,6 +13287,13 @@ body {
   margin-top: 3rem;
 }
 
+@media (min-width: 37.5em) {
+  .brief__device-gallery {
+    margin-top: 5rem;
+    height: 65rem;
+  }
+}
+
 @media (min-width: 56.25em) {
   .brief__device-gallery {
     height: 100%;

@@ -75,6 +75,11 @@
         height: 35rem;
         margin-top: 3rem;
 
+        @include respond(tab-port) {
+            margin-top: 5rem;
+            height: 65rem;
+        }
+
         @include respond(tab-land) {
             height: 100%;
         }
