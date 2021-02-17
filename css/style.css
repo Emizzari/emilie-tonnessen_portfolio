@@ -13198,11 +13198,23 @@ body {
   margin-bottom: 20rem;
 }
 
+.project__headline {
+  font-size: 4.8rem;
+  padding: 0;
+  line-height: 1.2;
+}
+
 .project-section {
   display: block;
   min-height: 100vh;
   width: 100vw;
-  padding: 15rem 0;
+  padding: 10rem 0;
+}
+
+@media (min-width: 56.25em) {
+  .project-section {
+    padding: 15rem 0;
+  }
 }
 
 .project-section--brief {
@@ -13229,18 +13241,26 @@ body {
 }
 
 .project-section__headline {
-  font-size: 6rem;
+  font-size: clamp(3rem, 5vw, 6rem);
   font-weight: 800;
-  letter-spacing: 4px;
+  letter-spacing: 1px;
   color: #00629B;
+}
+
+@media (min-width: 37.5em) {
+  .project-section__headline {
+    letter-spacing: 4px;
+  }
 }
 
 .project-section__title {
   font-size: 4rem;
 }
 
-.brief__content {
-  padding-right: 5rem;
+@media (min-width: 56.25em) {
+  .brief__content {
+    padding-right: 5rem;
+  }
 }
 
 .brief__buttons {
@@ -13254,7 +13274,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 2rem;
+  margin: 2rem 0;
 }
 
 .brief__buttons a {
@@ -13263,10 +13283,17 @@ body {
 
 .brief__device-gallery {
   position: relative;
+  height: 35rem;
+  margin-top: 3rem;
+}
+
+@media (min-width: 56.25em) {
+  .brief__device-gallery {
+    height: 100%;
+  }
 }
 
 .brief__photo {
-  margin: 2rem 0;
   -webkit-box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
           box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
   position: absolute;
@@ -13290,8 +13317,14 @@ body {
 
 .brief__photo--tablet {
   width: 70%;
-  top: 20rem;
+  top: 10rem;
   left: 10%;
+}
+
+@media (min-width: 56.25em) {
+  .brief__photo--tablet {
+    top: 20rem;
+  }
 }
 
 .brief__photo:hover, .brief__photo:focus {
@@ -13304,14 +13337,28 @@ body {
 
 .dev__tag {
   display: inline-block;
-  padding: .5rem 1.5rem;
+  padding: .5rem 1rem;
   border-radius: 1.5rem;
   margin: 0;
   font-weight: 600;
+  font-size: 1.4rem;
+}
+
+@media (min-width: 56.25em) {
+  .dev__tag {
+    padding: .5rem 1.5rem;
+    font-size: 1.6rem;
+  }
 }
 
 .dev__tag:not(:last-child) {
-  margin-right: 1.5rem;
+  margin: 0 1rem 1rem 0;
+}
+
+@media (min-width: 56.25em) {
+  .dev__tag:not(:last-child) {
+    margin: 0 1.5rem 1.5rem 0;
+  }
 }
 
 .dev__tag--language {
@@ -13328,19 +13375,27 @@ body {
   margin-top: 3rem;
 }
 
-.dev__features {
-  padding-left: 5rem;
+@media (min-width: 56.25em) {
+  .dev__features {
+    padding-left: 5rem;
+  }
 }
 
 .dev__features ul {
   list-style: none;
+  padding: 0;
 }
 
 .dev__features ul li {
-  line-height: 3;
-  font-size: 2rem;
+  padding: 1.5rem 0;
   font-family: fieldwork-hum, sans-serif;
   font-weight: 200;
+}
+
+@media (min-width: 56.25em) {
+  .dev__features ul li {
+    font-size: 2rem;
+  }
 }
 
 .dev__icon {
@@ -13374,8 +13429,14 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-left: 6rem;
-  height: 100%;
+  height: 40rem;
+}
+
+@media (min-width: 56.25em) {
+  .graphics__design-element {
+    height: 100%;
+    padding-left: 6rem;
+  }
 }
 
 .typography__side--left {
@@ -13426,8 +13487,10 @@ body {
   color: #FFBF5F;
 }
 
-.logo__desc {
-  padding-right: 5rem;
+@media (min-width: 56.25em) {
+  .logo__desc {
+    padding-right: 5rem;
+  }
 }
 
 .logo__gallery {
@@ -13506,31 +13569,63 @@ body {
 .rkk__font--heading-primary {
   font-family: sofia-pro, sans-serif;
   text-transform: uppercase;
-  font-size: 5rem;
+  font-size: 3.5rem;
   font-weight: 300;
-  letter-spacing: 7px;
+  letter-spacing: 4px;
+}
+
+@media (min-width: 56.25em) {
+  .rkk__font--heading-primary {
+    font-size: 5rem;
+    letter-spacing: 7px;
+  }
 }
 
 .rkk__font--heading-secondary {
   font-family: sofia-pro, sans-serif;
   text-transform: uppercase;
-  font-size: 5rem;
+  font-size: 3rem;
+}
+
+@media (min-width: 56.25em) {
+  .rkk__font--heading-secondary {
+    font-size: 5rem;
+  }
 }
 
 .rkk__font--sub-heading {
   font-family: sofia-pro, sans-serif;
   text-transform: uppercase;
-  font-size: 3rem;
+  font-size: 2.3rem;
+}
+
+@media (min-width: 56.25em) {
+  .rkk__font--sub-heading {
+    font-size: 3rem;
+  }
 }
 
 .rkk__font--nav {
   font-family: termina, sans-serif;
   text-transform: uppercase;
-  font-size: 2rem;
+  font-size: 1.6rem;
+}
+
+@media (min-width: 56.25em) {
+  .rkk__font--nav {
+    font-size: 2rem;
+  }
 }
 
 .rkk__font--body {
   font-family: montserrat, sans-serif;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+@media (min-width: 56.25em) {
+  .rkk__font--body {
+    font-size: 1.6rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */

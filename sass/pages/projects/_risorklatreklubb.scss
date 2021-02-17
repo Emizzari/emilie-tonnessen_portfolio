@@ -45,32 +45,54 @@
         &--heading-primary {
             font-family: sofia-pro, sans-serif;
             text-transform: uppercase;
-            font-size: 5rem;
+            font-size: 3.5rem;
             font-weight: 300;
-            letter-spacing: 7px;
+            letter-spacing: 4px;
+
+            @include respond(tab-land) {
+                font-size: 5rem;
+                letter-spacing: 7px;
+            }
         }
 
         &--heading-secondary {
             font-family: sofia-pro, sans-serif;
             text-transform: uppercase;
-            font-size: 5rem;
+            font-size: 3rem;
+
+            @include respond(tab-land) {
+                font-size: 5rem;
+            }
         }
 
         &--sub-heading {
             font-family: sofia-pro, sans-serif;
             text-transform: uppercase;
-            font-size: 3rem;
+            font-size: 2.3rem;
+
+            @include respond(tab-land) {
+                font-size: 3rem;
+            }
         }
 
         &--nav {
             font-family: termina, sans-serif;
             text-transform: uppercase;
-            font-size: 2rem;
+            font-size: 1.6rem;
+
+            @include respond(tab-land) {
+                font-size: 2rem;
+            }
         }
 
         &--body {
             font-family: montserrat, sans-serif;
-            font-size: 1.6rem;
+            font-size: 1.4rem;
+            font-weight: 300;
+
+            @include respond(tab-land) {
+                font-size: 1.6rem;
+            }
         }
     }
 }    
