@@ -14,7 +14,7 @@ This is a personal project to create a working professional portfolio website to
 - jQuery (mobile menu)
 
 ## Live Website
-https://www.tonnessen.com/
+Website is now replaced by a new version and is no longer live. 
 
 ## List of to do:
 - Varus Cosmetics API seems to not laod
